@@ -8,5 +8,6 @@ namespace src.Models
 {
     internal class Node
     {
+
     }
 }
