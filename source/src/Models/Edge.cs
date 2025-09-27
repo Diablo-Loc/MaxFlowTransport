@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace src.Models
 {
-    internal class Edge
+    public class Edge
     {
-        public int From { get; private set; }     // đỉnh xuất phát
-        public int To { get; private set; }       // đỉnh đích
-        public int Capacity { get; private set; } // sức chứa
-        public int Flow { get; private set; }     // dòng chảy hiện tại
+        public int From { get; set; }     // đỉnh xuất phát
+        public int To { get; set; }       // đỉnh đích
+        public int Capacity { get; set; } // sức chứa
+        public int Flow { get; set; }     // dòng chảy hiện tại
+        public Edge reverse { get; set; } 
         public Edge() { }
         public Edge(int from, int to, int capacity)
         {

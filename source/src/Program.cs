@@ -1,6 +1,7 @@
-using src.Algorithms;
+﻿using src.Algorithms;
 using src.Models;
 using src.UI;
+
 
 namespace src
 {
@@ -9,6 +10,7 @@ namespace src
         /// <summary>
         ///  The main entry point for the application.
         /// </summary>
+        /// // Lấy dữ liệu mẫu
         [STAThread]
         static void Main()
         {
@@ -16,6 +18,7 @@ namespace src
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new MainForm());
+            
         }
     }
 }

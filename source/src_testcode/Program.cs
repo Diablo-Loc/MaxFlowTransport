@@ -2,6 +2,7 @@
 using System.Runtime.CompilerServices;
 using System.Windows.Forms.VisualStyles;
 using src.Models;
+using src.Algorithms;
 
 namespace src_testcode
 {
@@ -9,28 +10,28 @@ namespace src_testcode
     {
         static void Main(string[] args)
         {
-            /*Edge e = new Edge(0, 1, 10);
-            Console.WriteLine($"From: {e.From}, To: {e.To}, Capacity: {e.Capacity}, Flow: {e.Flow}");
-            Console.WriteLine($"Residual = {e.ResidualCapacity}");
+            // Lấy dữ liệu mẫu
+            var (supply, demand, cap) = Utils.SampleData();
 
-            // Thêm 5 đơn vị luồng
-            e.AddFlow(5);
-            Console.WriteLine($"Flow sau AddFlow(5) = {e.Flow}");
-            Console.WriteLine($"Residual = {e.ResidualCapacity}");
+            // Xây dựng đồ thị vận tải
+            Graph g = Utils.BuildTransportationGraph(supply, demand, cap);
 
-            // Giả sử đã có class Graph
-            Graph g = new Graph(3);
-            g.AddEdge(0, 1, 10);
-            g.AddEdge(1, 2, 5);
+            // Tính max flow: nguồn = supply.Length + demand.Length,
+            // đích   = supply.Length + demand.Length + 1
+            int source = supply.Length + demand.Length;
+            int sink = source + 1;
 
-            Console.WriteLine("\nEdges in Graph:");
-            for (int v = 0; v < g.VertexCount; v++)
+            int maxFlow = MaxFlowSolve.EdmondKarp(g, source, sink);
+
+            Console.WriteLine($"Maximum Flow = {maxFlow}");
+
+            Console.WriteLine("\nEdges with final flow:");
+            foreach (var e in g.GetAllEdges())
             {
-                foreach (var edge in g.GetAdj(v))
-                {
-                    Console.WriteLine($"{edge.From}->{edge.To}, cap {edge.Capacity}, flow {edge.Flow}");
-                }
-            }*/
+                if (e.Flow > 0)
+                    Console.WriteLine($"{e.From} -> {e.To} | Flow = {e.Flow}/{e.Capacity}");
+            }
+
         }
     }
 }
