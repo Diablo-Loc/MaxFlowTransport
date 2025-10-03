@@ -16,3 +16,8 @@ D:\Học tập\7.Hoc_tren_lop\Toan_roi_rac\MaxFlowTransport\source\src\obj\Debug
 D:\Học tập\7.Hoc_tren_lop\Toan_roi_rac\MaxFlowTransport\source\src\obj\Debug\net8.0-windows\src.pdb
 D:\Học tập\7.Hoc_tren_lop\Toan_roi_rac\MaxFlowTransport\source\src\obj\Debug\net8.0-windows\src.genruntimeconfig.cache
 D:\Học tập\7.Hoc_tren_lop\Toan_roi_rac\MaxFlowTransport\source\src\obj\Debug\net8.0-windows\ref\src.dll
+D:\Học tập\7.Hoc_tren_lop\Toan_roi_rac\MaxFlowTransport\source\src\obj\Debug\net8.0-windows\src.UI.CalculaterMF.resources
+D:\Học tập\7.Hoc_tren_lop\Toan_roi_rac\MaxFlowTransport\source\src\obj\Debug\net8.0-windows\Interop.Accessibility.dll
+D:\Học tập\7.Hoc_tren_lop\Toan_roi_rac\MaxFlowTransport\source\src\obj\Debug\net8.0-windows\Interop.VBIDE.dll
+D:\Học tập\7.Hoc_tren_lop\Toan_roi_rac\MaxFlowTransport\source\src\obj\Debug\net8.0-windows\src.csproj.ResolveComReference.cache
+D:\Học tập\7.Hoc_tren_lop\Toan_roi_rac\MaxFlowTransport\source\src\obj\Debug\net8.0-windows\src.Properties.Resources.resources

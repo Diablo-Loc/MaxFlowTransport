@@ -10,28 +10,23 @@ namespace src_testcode
     {
         static void Main(string[] args)
         {
-            // Lấy dữ liệu mẫu
-            var (supply, demand, cap) = Utils.SampleData();
-
-            // Xây dựng đồ thị vận tải
+            /*var (supply, demand, cap) = Utils.SampleData();
             Graph g = Utils.BuildTransportationGraph(supply, demand, cap);
 
-            // Tính max flow: nguồn = supply.Length + demand.Length,
-            // đích   = supply.Length + demand.Length + 1
             int source = supply.Length + demand.Length;
             int sink = source + 1;
 
             int maxFlow = MaxFlowSolve.EdmondKarp(g, source, sink);
 
-            Console.WriteLine($"Maximum Flow = {maxFlow}");
+            Console.WriteLine($"Maximum Flow = {maxFlow}\n");
 
-            Console.WriteLine("\nEdges with final flow:");
-            foreach (var e in g.GetAllEdges())
+            Console.WriteLine("Edges with final flow:");
+            foreach (var e in g.Edges) // chỉ in cạnh thuận
             {
-                if (e.Flow > 0)
-                    Console.WriteLine($"{e.From} -> {e.To} | Flow = {e.Flow}/{e.Capacity}");
+                Console.WriteLine($"{e.From} -> {e.To} | Flow = {e.Flow}/{e.Capacity}");
             }
 
+            Console.WriteLine("\nDone.");*/
         }
     }
 }

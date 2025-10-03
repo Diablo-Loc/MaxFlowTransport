@@ -12,21 +12,18 @@ namespace src.Algorithms
         public static int EdmondKarp(Graph g, int source, int sink)
         {
             int maxflow = 0;
-            Edge[] parent = new Edge[g._vertexCount];
+            Edge[] parent = new Edge[g.VertexCount];
+
             while (Bfs.BfsCheck(g, source, sink, parent))
             {
                 int pathFlow = int.MaxValue;
                 for (int v = sink; v != source; v = parent[v].From)
-                {
                     pathFlow = Math.Min(pathFlow, parent[v].ResidualCapacity());
-                }
                 for (int v = sink; v != source; v = parent[v].From)
                 {
                     Edge e = parent[v];
                     e.AddFlow(pathFlow);
-                    Edge rev = g.GetReverseEdge(e);
-                    if (rev != null)
-                        rev.AddFlow(-pathFlow);
+                    e.Reverse.AddFlow(-pathFlow);
                 }
                 maxflow += pathFlow;
             }

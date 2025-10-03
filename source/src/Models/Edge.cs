@@ -12,7 +12,7 @@ namespace src.Models
         public int To { get; set; }       // đỉnh đích
         public int Capacity { get; set; } // sức chứa
         public int Flow { get; set; }     // dòng chảy hiện tại
-        public Edge reverse { get; set; } 
+        public Edge Reverse { get; set; } 
         public Edge() { }
         public Edge(int from, int to, int capacity)
         {
@@ -25,10 +25,10 @@ namespace src.Models
         {
             return Capacity - Flow;
         }
-        public void AddFlow(int amount)
+        public void AddFlow(int count)
         {
-            Flow += amount;
+            Flow += count;
         }
-
+        
     }
 }

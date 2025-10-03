@@ -8,6 +8,32 @@ namespace src.Models
 {
     public class Utils
     {
+        /*public static (int[] supply, int[] demand, int[,] capacity) SampleData()
+        {
+            int[] supply = { 10 };
+            int[] demand = { 5, 5 };
+
+            int[,] cap = {
+            {0,10}
+            };
+
+            return (supply, demand, cap);
+        }*/
+        public static int[,] SampleCapacity(int supplyCount, int demandCount)
+        {
+            int[,] cap = new int[supplyCount, demandCount];
+            Random rnd = new Random();
+
+            for (int i = 0; i < supplyCount; i++)
+            {
+                for (int j = 0; j < demandCount; j++)
+                {
+                    cap[i, j] = rnd.Next(5, 15); // random capacity
+                }
+            }
+            return cap;
+        }
+
         public static Graph BuildTransportationGraph(int[]cung, int[]cau, int[,] capacity)
         {
             int m=cung.Length;
@@ -27,17 +53,6 @@ namespace src.Models
             for (int j = 0; j < n; j++)
                 g.AddEdge(m + j, superSink, cau[j]);
             return g;
-        }
-        // đây là phần nhập(input)
-        public static (int[], int[], int[,]) SampleData()
-        {
-            int[] cung = { 15, 20 };        // 2 nguồn
-            int[] cau = { 10, 12, 13 };    // 3 đích
-            int[,] cap = {
-                { 10, 10, 5 },
-                { 5, 10, 20 }
-            };
-            return (cung, cau, cap);
         }
     }
 }
