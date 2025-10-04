@@ -47,6 +47,8 @@ namespace src.UI
             lblMauDemand = new Label();
             lblExCapa = new Label();
             label2 = new Label();
+            lblChooseTestCase = new Label();
+            cbTestCase = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)dgvCapacity).BeginInit();
             SuspendLayout();
             // 
@@ -249,7 +251,6 @@ namespace src.UI
             // 
             // label2
             // 
-            label2.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.Black;
@@ -260,6 +261,28 @@ namespace src.UI
             label2.Text = "SRC: Source, SNK: Sink.";
             label2.TextAlign = ContentAlignment.MiddleCenter;
             // 
+            // lblChooseTestCase
+            // 
+            lblChooseTestCase.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            lblChooseTestCase.BackColor = Color.Transparent;
+            lblChooseTestCase.FlatStyle = FlatStyle.Flat;
+            lblChooseTestCase.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblChooseTestCase.ForeColor = Color.Black;
+            lblChooseTestCase.Location = new Point(110, 524);
+            lblChooseTestCase.Name = "lblChooseTestCase";
+            lblChooseTestCase.Size = new Size(199, 31);
+            lblChooseTestCase.TabIndex = 13;
+            lblChooseTestCase.Text = "Choose Test Case:";
+            // 
+            // cbTestCase
+            // 
+            cbTestCase.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            cbTestCase.FormattingEnabled = true;
+            cbTestCase.Location = new Point(306, 530);
+            cbTestCase.Name = "cbTestCase";
+            cbTestCase.Size = new Size(91, 28);
+            cbTestCase.TabIndex = 14;
+            // 
             // CalculaterMF
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -267,6 +290,8 @@ namespace src.UI
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(993, 661);
+            Controls.Add(cbTestCase);
+            Controls.Add(lblChooseTestCase);
             Controls.Add(label2);
             Controls.Add(lblExCapa);
             Controls.Add(lblMauDemand);
@@ -309,5 +334,7 @@ namespace src.UI
         private Label lblMauDemand;
         private Label lblExCapa;
         private Label label2;
+        private Label lblChooseTestCase;
+        private ComboBox cbTestCase;
     }
 }

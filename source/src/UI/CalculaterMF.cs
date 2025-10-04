@@ -24,7 +24,10 @@ namespace src.UI
                           ControlStyles.UserPaint |
                           ControlStyles.OptimizedDoubleBuffer, true);
             this.UpdateStyles();
+            LoadTestCases();
+            cbTestCase.SelectedIndexChanged += cbTestCase_SelectedIndexChanged;
         }
+
         public class DoubleBufferedPanel : Panel
         {
             public DoubleBufferedPanel()
@@ -184,7 +187,79 @@ namespace src.UI
                 MessageBox.Show("Error creating table: " + ex.Message);
             }
         }
-        
+        private void LoadTestCases()
+        {
+            string baseDir = AppDomain.CurrentDomain.BaseDirectory;
 
+            // Truy ngược 2 cấp lên để tới thư mục gốc project
+            string projectRoot = Path.GetFullPath(Path.Combine(baseDir, @"..\..\..\"));
+
+            // Ghép thêm thư mục "Data Test"
+            string dataDir = Path.Combine(projectRoot, "Data Test");
+
+            if (!Directory.Exists(dataDir))
+            {
+                Directory.CreateDirectory(dataDir);
+            }
+
+            string[] files = Directory.GetFiles(dataDir, "*.txt");
+            cbTestCase.Items.Clear();
+            foreach (var f in files)
+            {
+                cbTestCase.Items.Add(Path.GetFileNameWithoutExtension(f));
+            }
+        }
+
+        private void cbTestCase_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string baseDir = AppDomain.CurrentDomain.BaseDirectory;
+
+            // Truy ngược 2 cấp lên để tới thư mục gốc project
+            string projectRoot = Path.GetFullPath(Path.Combine(baseDir, @"..\..\..\"));
+
+            // Ghép thêm thư mục "Data Test"
+            string dataDir = Path.Combine(projectRoot, "Data Test");
+
+            string fileName = cbTestCase.SelectedItem.ToString() + ".txt";
+            string filePath = Path.Combine(dataDir, fileName);
+
+            if (!File.Exists(filePath))
+            {
+                MessageBox.Show("File not found: " + fileName);
+                return;
+            }
+
+            string[] lines = File.ReadAllLines(filePath);
+            int lineIndex = 0;
+
+            // đọc Supply
+            var supplyLine = lines[lineIndex++].Replace("Supply:", "").Trim();
+            txbInputSupply.Text = supplyLine;
+
+            // đọc Demand
+            var demandLine = lines[lineIndex++].Replace("Demand:", "").Trim();
+            txbInputDemand.Text = demandLine;
+
+            // đọc matrix
+            lineIndex++; // bỏ dòng "Matrix:"
+            var matrixLines = lines.Skip(lineIndex).Where(l => !string.IsNullOrWhiteSpace(l)).ToArray();
+
+            int[] supply = supplyLine.Split(',').Select(x => int.Parse(x.Trim())).ToArray();
+            int[] demand = demandLine.Split(',').Select(x => int.Parse(x.Trim())).ToArray();
+            int[,] cap = new int[supply.Length, demand.Length];
+
+            for (int i = 0; i < supply.Length; i++)
+            {
+                var parts = matrixLines[i].Split(' ', StringSplitOptions.RemoveEmptyEntries)
+                                         .Select(int.Parse).ToArray();
+                for (int j = 0; j < demand.Length; j++)
+                {
+                    cap[i, j] = parts[j];
+                }
+            }
+
+            // hiển thị lên DataGridView
+            CreateCapacityGrid(supply, demand, cap);
+        }
     }
 }
