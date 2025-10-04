@@ -48,7 +48,7 @@ namespace src.UI
         }
         private void PanelDraw_MouseDown(object sender, MouseEventArgs e)
         {
-            if (mode == "Select") 
+            if (mode == "Select")
             {
                 var hit = FindNodeAt(e.X, e.Y);
                 if (hit != null)
@@ -104,7 +104,6 @@ namespace src.UI
             uiEdges = newEdges;
             nextNodeId = Nodes.Count;
         }
-
 
         public class DoubleBufferedPanel : Panel
         {
@@ -334,7 +333,7 @@ namespace src.UI
                 g.DrawString(n._label, f, Brushes.Black, n.X - sz.Width / 2, n.Y - sz.Height / 2);
             }
         }
-        
+
         private Graph BuildGraphFromUI()
         {
             Graph g = new Graph(Nodes.Count);
@@ -354,31 +353,17 @@ namespace src.UI
             }
             pnlDraw.MouseClick -= PanelDraw_EraseEdge;
         }
-
-        private void btnEraseNode_Click(object sender, EventArgs e)
-        {
-            mode = "EraseNode";
-            btnEraseNode.BackColor = Color.LightGreen;
-            btnEraseEdge.BackColor = SystemColors.Control;
-            btnAddNode.BackColor = SystemColors.Control;
-            btnAddEdge.BackColor = SystemColors.Control;
-            MessageBox.Show("Click vào node để xoá (bạn đang ở chế độ Erase Node).");
-        }
-
-        private void btnEditEdge_Click(object sender, EventArgs e)
-        {
-            pnlDraw.MouseClick += PanelDraw_EditEdge;
-            MessageBox.Show("Click vào cạnh muốn chỉnh sửa capacity.");
-        }
-
         private void PanelDraw_EditEdge(object sender, MouseEventArgs e)
         {
             var hitEdge = FindEdgeAt(e.X, e.Y);
             if (hitEdge != null)
             {
+                string direction = $"N{hitEdge.Item1} → N{hitEdge.Item2}";
+                string prompt = $"Edge direction: {direction}\nCurrent Capacity: {hitEdge.Item3}\n\nEnter new capacity:";
+
                 string input = Microsoft.VisualBasic.Interaction.InputBox(
-                    $"Capacity hiện tại: {hitEdge.Item3}. Nhập capacity mới:",
-                    "Edit Edge", hitEdge.Item3.ToString());
+                    prompt, "Edge editing", hitEdge.Item3.ToString());
+
 
                 if (int.TryParse(input, out int newCap))
                 {
@@ -392,30 +377,6 @@ namespace src.UI
             // bỏ event sau 1 lần dùng để không bị double
             pnlDraw.MouseClick -= PanelDraw_EditEdge;
         }
-        private void BtnClear_Click(object sender, EventArgs e)
-        {
-            Graph newGraph = new Graph(Nodes.Count);
-            Nodes.Clear();
-            uiEdges.Clear();
-            sourceNodes.Clear();
-            sinkNodes.Clear();
-            selectedNode = null;
-            nextNodeId = 0;
-            lblMaxFlow.Text = "0";
-            Nodes.Clear();
-            Edges.Clear();
-            pnlDraw.Invalidate();
-        }
-        private void btnEraseEdge_Click(object sender, EventArgs e)
-        {
-            mode = "EraseEdge";
-            btnEraseEdge.BackColor = Color.LightGreen;
-            btnEraseNode.BackColor = SystemColors.Control;
-            btnAddNode.BackColor = SystemColors.Control;
-            btnAddEdge.BackColor = SystemColors.Control;
-            MessageBox.Show("Click vào cạnh để xoá (bạn đang ở chế độ Erase Edge).");
-        }
-
         private void btnSelect_Click(object sender, EventArgs e)
         {
             mode = "Select";
@@ -427,11 +388,95 @@ namespace src.UI
             btnSelectSource.BackColor = SystemColors.Control;
             btnSelectSink.BackColor = SystemColors.Control;
         }
+        private void btnAddNode_Click(object sender, EventArgs e)
+        {
+            mode = "AddNode";
+            btnAddNode.BackColor = Color.LightGreen;
+            btnEraseEdge.BackColor = SystemColors.Control;
+            btnSelect.BackColor = SystemColors.Control;
+            btnEraseNode.BackColor = SystemColors.Control;
+            btnAddEdge.BackColor = SystemColors.Control;
+            btnSelectSource.BackColor = SystemColors.Control;
+            btnSelectSink.BackColor = SystemColors.Control;
+        }
+        private void btnAddEdge_Click(object sender, EventArgs e)
+        {
+            mode = "AddEdge";
+            btnAddEdge.BackColor = Color.LightGreen;
+            btnAddNode.BackColor = SystemColors.Control;
+            btnEraseEdge.BackColor = SystemColors.Control;
+            btnSelect.BackColor = SystemColors.Control;
+            btnEraseNode.BackColor = SystemColors.Control;
+            btnSelectSource.BackColor = SystemColors.Control;
+            btnSelectSink.BackColor = SystemColors.Control;
+        }
+        private void btnEditEdge_Click(object sender, EventArgs e)
+        {
+            pnlDraw.MouseClick += PanelDraw_EditEdge;
+            btnEditEdge.BackColor = Color.LightGreen;
+            btnSelect.BackColor = SystemColors.Control;
+            btnEraseNode.BackColor = SystemColors.Control;
+            btnEraseEdge.BackColor = SystemColors.Control;
+            btnAddNode.BackColor = SystemColors.Control;
+            btnAddEdge.BackColor = SystemColors.Control;
+            btnSelectSource.BackColor = SystemColors.Control;
+            btnSelectSink.BackColor = SystemColors.Control;
+            MessageBox.Show("Click on the edge you want to edit capacity.");
+        }
+        
+        private void btnEraseNode_Click(object sender, EventArgs e)
+        {
+            mode = "EraseNode";
+            btnEraseNode.BackColor = Color.LightGreen;
+            btnEraseEdge.BackColor = SystemColors.Control;
+            btnAddNode.BackColor = SystemColors.Control;
+            btnAddEdge.BackColor = SystemColors.Control;
+            btnSelect.BackColor = SystemColors.Control;
+            btnSelectSource.BackColor = SystemColors.Control;
+            btnSelectSink.BackColor = SystemColors.Control;
+            btnEditEdge.BackColor =SystemColors.Control;
+            MessageBox.Show("Click the button to erase (you are in Erase Node mode).");
+        }
+        private void btnEraseEdge_Click(object sender, EventArgs e)
+        {
+            mode = "EraseEdge";
+            btnEraseEdge.BackColor = Color.LightGreen;
+            btnEraseNode.BackColor = SystemColors.Control;
+            btnAddNode.BackColor = SystemColors.Control;
+            btnAddEdge.BackColor = SystemColors.Control;
+            btnSelectSource.BackColor = SystemColors.Control;
+            btnSelectSink.BackColor = SystemColors.Control;
+            MessageBox.Show("Click on the edge to erase (you are in Erase Edge mode).");
+        }
+        
+        private void BtnClear_Click(object sender, EventArgs e)
+        {
+            Graph newGraph = new Graph(Nodes.Count);
+            btnEraseNode.BackColor = SystemColors.Control;
+            btnEraseEdge.BackColor = SystemColors.Control;
+            btnAddNode.BackColor = SystemColors.Control;
+            btnAddEdge.BackColor = SystemColors.Control;
+            btnSelect.BackColor = SystemColors.Control;
+            btnSelectSource.BackColor = SystemColors.Control;
+            btnSelectSink.BackColor = SystemColors.Control;
+            btnEditEdge.BackColor = SystemColors.Control;
+            Nodes.Clear();
+            uiEdges.Clear();
+            sourceNodes.Clear();
+            sinkNodes.Clear();
+            selectedNode = null;
+            nextNodeId = 0;
+            lblMaxFlow.Text = "0";
+            Nodes.Clear();
+            Edges.Clear();
+            pnlDraw.Invalidate();
+        }
 
         private void buttonSelectSource_Click(object sender, EventArgs e)
         {
             mode = "SelectSourceMulti";
             btnSelectSource.BackColor = Color.LightGreen;
+            btnSelectSink.BackColor = SystemColors.Control;
             btnEraseNode.BackColor = SystemColors.Control;
             btnEraseEdge.BackColor = SystemColors.Control;
             btnAddNode.BackColor = SystemColors.Control;
@@ -442,6 +487,7 @@ namespace src.UI
         {
             mode = "SelectSinkMulti";
             btnSelectSink.BackColor = Color.LightGreen;
+            btnSelectSource.BackColor = SystemColors.Control;
             btnEraseNode.BackColor = SystemColors.Control;
             btnEraseEdge.BackColor = SystemColors.Control;
             btnAddNode.BackColor = SystemColors.Control;
@@ -463,11 +509,11 @@ namespace src.UI
                     MessageBox.Show("Please select at least one source and one sink.");
                     return;
                 }
-                
+
                 int superSource = Nodes.Count;
                 int superSink = Nodes.Count + 1;
                 Graph newGraph = new Graph(Nodes.Count + 2);
-                
+
                 foreach (var edge in uiEdges)
                 {
                     newGraph.AddEdge(edge.Item1, edge.Item2, edge.Item3);
@@ -482,7 +528,7 @@ namespace src.UI
                 }
                 if (!CheckReachability(newGraph.GetAllEdges().ToList(), sourceNodes, sinkNodes))
                 {
-                    MessageBox.Show("Không có đường đi theo chiều đã chọn. Kiểm tra hướng cạnh.");
+                    MessageBox.Show("There is no path in the selected direction. Check the edge direction.");
                     return;
                 }
                 //chạy edmondkarf
@@ -496,6 +542,7 @@ namespace src.UI
             {
                 lblMaxFlow.Text = "Error: " + ex.Message;
             }
+            mode = "Select";
         }
         //Check có bị cạnh ngược lại khi tạo ko
         public bool CheckReachability(List<Edge> edges, List<Node> sources, List<Node> sinks)
@@ -534,5 +581,7 @@ namespace src.UI
             }
             return false;
         }
+
+        
     }
 }

@@ -1,14 +1,16 @@
-﻿using System;
+﻿using src.Algorithms;
+using src.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using src.Algorithms;
-using src.Models;
+using System.Xml.Linq;
 
 namespace src.UI
 {
@@ -17,6 +19,22 @@ namespace src.UI
         public CalculaterMF()
         {
             InitializeComponent();
+            this.DoubleBuffered = true; 
+            this.SetStyle(ControlStyles.AllPaintingInWmPaint |
+                          ControlStyles.UserPaint |
+                          ControlStyles.OptimizedDoubleBuffer, true);
+            this.UpdateStyles();
+        }
+        public class DoubleBufferedPanel : Panel
+        {
+            public DoubleBufferedPanel()
+            {
+                this.DoubleBuffered = true;
+                this.SetStyle(ControlStyles.AllPaintingInWmPaint |
+                              ControlStyles.UserPaint |
+                              ControlStyles.OptimizedDoubleBuffer, true);
+                this.UpdateStyles();
+            }
         }
 
         private void btnRun_Click(object sender, EventArgs e)
@@ -29,7 +47,7 @@ namespace src.UI
                                     .Select(x => int.Parse(x.Trim())).ToArray(); 
                 if (!TryReadCapacityGrid(out int[,] cap, out string err))
                 {
-                    MessageBox.Show(err, "Lỗi dữ liệu", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(err, "Data error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
@@ -40,16 +58,36 @@ namespace src.UI
 
                 var sb = new StringBuilder();
                 lblMaxFlow.Text=($"Maximum Flow = {maxFlow}");
-                                
-                foreach (var e1 in g.Edges) // chỉ in cạnh thuận
+
+                int nSupply = supply.Length;
+                int nDemand = demand.Length;
+                int sourceId = nSupply + nDemand;
+                int sinkId = sourceId + 1;
+                foreach (var e1 in g.GetAllEdges())
                 {
-                    sb.AppendLine($"{e1.From} -> {e1.To} | Flow = {e1.Flow}/{e1.Capacity}");
+                    if (e1.Flow == 0 || e1.Capacity == 0) continue;
+
+                    string fromLabel, toLabel;
+                    if (e1.From == source) fromLabel = "SRC";
+                    else if (e1.From == sink) fromLabel = "SNK";
+                    else if (e1.From < supply.Length) fromLabel = $"S{e1.From}";
+                    else if (e1.From < supply.Length + demand.Length) fromLabel = $"D{e1.From - supply.Length}";
+                    else fromLabel = $"N{e1.From}";
+
+                    if (e1.To == source) toLabel = "SRC";
+                    else if (e1.To == sink) toLabel = "SNK";
+                    else if (e1.To < supply.Length) toLabel = $"S{e1.To}";
+                    else if (e1.To < supply.Length + demand.Length) toLabel = $"D{e1.To - supply.Length}";
+                    else toLabel = $"N{e1.To}";
+
+                    sb.AppendLine($"{fromLabel} -> {toLabel} | Flow = {e1.Flow}/{e1.Capacity}");
                 }
                 txbResult.Text = sb.ToString();
+                
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi khi chạy: " + ex.Message);
+                MessageBox.Show("Error while running: " + ex.Message);
             }
         }
 
@@ -74,7 +112,7 @@ namespace src.UI
                 col.Name = "D" + j;
                 col.HeaderText = "D" + j;
                 col.ValueType = typeof(int);
-                col.Width = 60;
+                col.Width = 70;
                 dgvCapacity.Columns.Add(col);
             }
             for (int i = 0; i < r; i++)
@@ -97,7 +135,7 @@ namespace src.UI
 
             if (dgvCapacity.Columns.Count == 0 || dgvCapacity.Rows.Count == 0)
             {
-                errMsg = "Chưa tạo bảng capacity. Nhấn 'Tạo bảng capacity' trước.";
+                errMsg = "Capacity table not created yet. Click 'Create capacity table' first.";
                 return false;
             }
 
@@ -118,7 +156,7 @@ namespace src.UI
                     {
                         if (!int.TryParse(cell.ToString(), out int v) || v < 0)
                         {
-                            errMsg = $"Giá trị không hợp lệ tại ô S{i},D{j}. Hãy nhập số nguyên không âm.";
+                            errMsg = $"Invalid value in cell S{i},D{j}. Please enter a non-negative integer.";
                             return false;
                         }
                         cap[i, j] = v;
@@ -143,8 +181,10 @@ namespace src.UI
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi khi tạo bảng: " + ex.Message);
+                MessageBox.Show("Error creating table: " + ex.Message);
             }
         }
+        
+
     }
 }

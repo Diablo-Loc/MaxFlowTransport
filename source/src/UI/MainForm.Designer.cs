@@ -30,15 +30,24 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             pnltopbar = new Panel();
+            btnMinimize = new Button();
+            btnMaximize = new Button();
+            btnExit = new Button();
             pnlMenu = new Panel();
-            btnSimulator = new Button();
+            btnSimlator = new Button();
             btnCalculateMaxFlow = new Button();
+            btnHome = new Button();
             pnlNameGroup = new Panel();
+            label3 = new Label();
+            label2 = new Label();
+            label1 = new Label();
             panel2 = new Panel();
             lblmain = new Label();
             pnlHienThi = new Panel();
             pictureBox1 = new PictureBox();
+            pnltopbar.SuspendLayout();
             pnlMenu.SuspendLayout();
+            pnlNameGroup.SuspendLayout();
             panel2.SuspendLayout();
             pnlHienThi.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -47,17 +56,74 @@
             // pnltopbar
             // 
             pnltopbar.BackColor = Color.FromArgb(64, 64, 64);
+            pnltopbar.Controls.Add(btnMinimize);
+            pnltopbar.Controls.Add(btnMaximize);
+            pnltopbar.Controls.Add(btnExit);
             pnltopbar.Dock = DockStyle.Top;
             pnltopbar.Location = new Point(0, 0);
             pnltopbar.Name = "pnltopbar";
             pnltopbar.Size = new Size(1197, 33);
             pnltopbar.TabIndex = 0;
             // 
+            // btnMinimize
+            // 
+            btnMinimize.BackColor = Color.Transparent;
+            btnMinimize.BackgroundImage = (Image)resources.GetObject("btnMinimize.BackgroundImage");
+            btnMinimize.BackgroundImageLayout = ImageLayout.Stretch;
+            btnMinimize.Dock = DockStyle.Right;
+            btnMinimize.FlatAppearance.BorderSize = 0;
+            btnMinimize.FlatStyle = FlatStyle.Flat;
+            btnMinimize.Location = new Point(1098, 0);
+            btnMinimize.Name = "btnMinimize";
+            btnMinimize.Size = new Size(33, 33);
+            btnMinimize.TabIndex = 2;
+            btnMinimize.Text = "--";
+            btnMinimize.UseVisualStyleBackColor = false;
+            btnMinimize.Click += btnMinimize_Click;
+            btnMinimize.MouseEnter += btn_MouseEnter;
+            btnMinimize.MouseLeave += btn_MouseLeave;
+            // 
+            // btnMaximize
+            // 
+            btnMaximize.BackColor = Color.Transparent;
+            btnMaximize.BackgroundImage = (Image)resources.GetObject("btnMaximize.BackgroundImage");
+            btnMaximize.BackgroundImageLayout = ImageLayout.Stretch;
+            btnMaximize.Dock = DockStyle.Right;
+            btnMaximize.FlatAppearance.BorderSize = 0;
+            btnMaximize.FlatStyle = FlatStyle.Flat;
+            btnMaximize.Location = new Point(1131, 0);
+            btnMaximize.Name = "btnMaximize";
+            btnMaximize.Size = new Size(33, 33);
+            btnMaximize.TabIndex = 1;
+            btnMaximize.UseVisualStyleBackColor = false;
+            btnMaximize.Click += btnMaximize_Click;
+            btnMaximize.MouseEnter += btn_MouseEnter;
+            btnMaximize.MouseLeave += btn_MouseLeave;
+            // 
+            // btnExit
+            // 
+            btnExit.BackColor = Color.Transparent;
+            btnExit.BackgroundImage = (Image)resources.GetObject("btnExit.BackgroundImage");
+            btnExit.BackgroundImageLayout = ImageLayout.Stretch;
+            btnExit.Dock = DockStyle.Right;
+            btnExit.FlatAppearance.BorderSize = 0;
+            btnExit.FlatStyle = FlatStyle.Flat;
+            btnExit.ForeColor = SystemColors.ActiveCaptionText;
+            btnExit.Location = new Point(1164, 0);
+            btnExit.Name = "btnExit";
+            btnExit.Size = new Size(33, 33);
+            btnExit.TabIndex = 0;
+            btnExit.UseVisualStyleBackColor = false;
+            btnExit.Click += btnExit_Click;
+            btnExit.MouseEnter += btn_MouseEnter;
+            btnExit.MouseLeave += btn_MouseLeave;
+            // 
             // pnlMenu
             // 
             pnlMenu.BackColor = Color.DimGray;
-            pnlMenu.Controls.Add(btnSimulator);
+            pnlMenu.Controls.Add(btnSimlator);
             pnlMenu.Controls.Add(btnCalculateMaxFlow);
+            pnlMenu.Controls.Add(btnHome);
             pnlMenu.Controls.Add(pnlNameGroup);
             pnlMenu.Dock = DockStyle.Left;
             pnlMenu.Location = new Point(0, 33);
@@ -65,36 +131,89 @@
             pnlMenu.Size = new Size(200, 759);
             pnlMenu.TabIndex = 1;
             // 
-            // btnSimulator
+            // btnSimlator
             // 
-            btnSimulator.Dock = DockStyle.Top;
-            btnSimulator.Location = new Point(0, 211);
-            btnSimulator.Name = "btnSimulator";
-            btnSimulator.Size = new Size(200, 75);
-            btnSimulator.TabIndex = 2;
-            btnSimulator.Text = "Simulator";
-            btnSimulator.UseVisualStyleBackColor = true;
-            btnSimulator.Click += btnSimulator_Click;
+            btnSimlator.Dock = DockStyle.Top;
+            btnSimlator.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnSimlator.Location = new Point(0, 286);
+            btnSimlator.Name = "btnSimlator";
+            btnSimlator.Size = new Size(200, 75);
+            btnSimlator.TabIndex = 1;
+            btnSimlator.Text = "Max Flow Simulator";
+            btnSimlator.UseVisualStyleBackColor = true;
+            btnSimlator.Click += btnSimulator_Click;
             // 
             // btnCalculateMaxFlow
             // 
             btnCalculateMaxFlow.Dock = DockStyle.Top;
-            btnCalculateMaxFlow.Location = new Point(0, 136);
+            btnCalculateMaxFlow.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnCalculateMaxFlow.Location = new Point(0, 211);
             btnCalculateMaxFlow.Name = "btnCalculateMaxFlow";
             btnCalculateMaxFlow.Size = new Size(200, 75);
-            btnCalculateMaxFlow.TabIndex = 1;
-            btnCalculateMaxFlow.Text = "Calculater Max Flow";
+            btnCalculateMaxFlow.TabIndex = 3;
+            btnCalculateMaxFlow.Text = "Transportation Problem";
             btnCalculateMaxFlow.UseVisualStyleBackColor = true;
             btnCalculateMaxFlow.Click += btnCalculateMaxFlow_Click;
+            // 
+            // btnHome
+            // 
+            btnHome.Dock = DockStyle.Top;
+            btnHome.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnHome.Location = new Point(0, 136);
+            btnHome.Name = "btnHome";
+            btnHome.Size = new Size(200, 75);
+            btnHome.TabIndex = 2;
+            btnHome.Text = "Home";
+            btnHome.UseVisualStyleBackColor = true;
+            btnHome.Click += btnHome_Click;
             // 
             // pnlNameGroup
             // 
             pnlNameGroup.BackColor = Color.DarkGray;
+            pnlNameGroup.Controls.Add(label3);
+            pnlNameGroup.Controls.Add(label2);
+            pnlNameGroup.Controls.Add(label1);
             pnlNameGroup.Dock = DockStyle.Top;
             pnlNameGroup.Location = new Point(0, 0);
             pnlNameGroup.Name = "pnlNameGroup";
             pnlNameGroup.Size = new Size(200, 136);
             pnlNameGroup.TabIndex = 0;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.FlatStyle = FlatStyle.Flat;
+            label3.Font = new Font("Segoe UI", 10.8F, FontStyle.Italic);
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(6, 88);
+            label3.Name = "label3";
+            label3.Size = new Size(175, 25);
+            label3.TabIndex = 2;
+            label3.Text = "Nguyễn Công Thành";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.FlatStyle = FlatStyle.Flat;
+            label2.Font = new Font("Segoe UI", 10.8F, FontStyle.Italic);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(6, 53);
+            label2.Name = "label2";
+            label2.Size = new Size(121, 25);
+            label2.TabIndex = 1;
+            label2.Text = "Trần Thiên Ân";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.FlatStyle = FlatStyle.Flat;
+            label1.Font = new Font("Segoe UI", 10.8F, FontStyle.Italic);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(6, 19);
+            label1.Name = "label1";
+            label1.Size = new Size(142, 25);
+            label1.TabIndex = 0;
+            label1.Text = "Nguyễn Đăk Lộc";
             // 
             // panel2
             // 
@@ -108,12 +227,12 @@
             // 
             // lblmain
             // 
-            lblmain.AutoSize = true;
-            lblmain.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblmain.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            lblmain.Font = new Font("Showcard Gothic", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             lblmain.ForeColor = Color.Cyan;
-            lblmain.Location = new Point(378, 19);
+            lblmain.Location = new Point(396, 19);
             lblmain.Name = "lblmain";
-            lblmain.Size = new Size(208, 54);
+            lblmain.Size = new Size(209, 50);
             lblmain.TabIndex = 0;
             lblmain.Text = "GROUP 11";
             lblmain.TextAlign = ContentAlignment.MiddleCenter;
@@ -149,11 +268,14 @@
             Controls.Add(panel2);
             Controls.Add(pnlMenu);
             Controls.Add(pnltopbar);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "MainForm";
             Text = "MainForm";
+            pnltopbar.ResumeLayout(false);
             pnlMenu.ResumeLayout(false);
+            pnlNameGroup.ResumeLayout(false);
+            pnlNameGroup.PerformLayout();
             panel2.ResumeLayout(false);
-            panel2.PerformLayout();
             pnlHienThi.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
@@ -163,12 +285,19 @@
 
         private Panel pnltopbar;
         private Panel pnlMenu;
-        private Button btnCalculateMaxFlow;
+        private Button btnHome;
         private Panel pnlNameGroup;
         private Panel panel2;
-        private Button btnSimulator;
+        private Button btnCalculateMaxFlow;
         private Label lblmain;
         private Panel pnlHienThi;
         private PictureBox pictureBox1;
+        private Label label1;
+        private Label label3;
+        private Label label2;
+        private Button btnExit;
+        private Button btnMinimize;
+        private Button btnMaximize;
+        private Button btnSimlator;
     }
 }

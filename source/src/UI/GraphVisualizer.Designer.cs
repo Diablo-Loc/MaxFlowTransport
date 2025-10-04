@@ -59,6 +59,7 @@
             btnAddNode.TabIndex = 1;
             btnAddNode.Text = "Add Node";
             btnAddNode.UseVisualStyleBackColor = true;
+            btnAddNode.Click += btnAddNode_Click;
             // 
             // btnAddEdge
             // 
@@ -68,6 +69,7 @@
             btnAddEdge.TabIndex = 2;
             btnAddEdge.Text = "Add Edge";
             btnAddEdge.UseVisualStyleBackColor = true;
+            btnAddEdge.Click += btnAddEdge_Click;
             // 
             // btnClear
             // 

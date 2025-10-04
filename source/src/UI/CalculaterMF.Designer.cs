@@ -1,4 +1,6 @@
-﻿namespace src.UI
+﻿using System.Drawing;
+
+namespace src.UI
 {
     partial class CalculaterMF
     {
@@ -28,7 +30,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            pnlInput = new Panel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CalculaterMF));
             dgvCapacity = new DataGridView();
             btnCreat = new Button();
             lblInput = new Label();
@@ -41,148 +43,157 @@
             txbResult = new TextBox();
             lblMaxFlow = new Label();
             label1 = new Label();
-            pnlInput.SuspendLayout();
+            lblMauSupply = new Label();
+            lblMauDemand = new Label();
+            lblExCapa = new Label();
+            label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvCapacity).BeginInit();
             SuspendLayout();
             // 
-            // pnlInput
-            // 
-            pnlInput.BackColor = SystemColors.AppWorkspace;
-            pnlInput.Controls.Add(dgvCapacity);
-            pnlInput.Controls.Add(btnCreat);
-            pnlInput.Controls.Add(lblInput);
-            pnlInput.Controls.Add(btnClear);
-            pnlInput.Controls.Add(btnRun);
-            pnlInput.Controls.Add(txbInputDemand);
-            pnlInput.Controls.Add(txbInputSupply);
-            pnlInput.Controls.Add(lblDemand);
-            pnlInput.Controls.Add(lblSupply);
-            pnlInput.Location = new Point(39, 258);
-            pnlInput.Name = "pnlInput";
-            pnlInput.Size = new Size(909, 391);
-            pnlInput.TabIndex = 0;
-            // 
             // dgvCapacity
             // 
+            dgvCapacity.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            dgvCapacity.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvCapacity.BackgroundColor = Color.LightSteelBlue;
             dgvCapacity.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvCapacity.Location = new Point(491, 52);
+            dgvCapacity.Location = new Point(571, 319);
             dgvCapacity.Name = "dgvCapacity";
-            dgvCapacity.RowHeadersWidth = 51;
+            dgvCapacity.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             dgvCapacity.SelectionMode = DataGridViewSelectionMode.CellSelect;
-            dgvCapacity.Size = new Size(371, 204);
+            dgvCapacity.Size = new Size(356, 204);
             dgvCapacity.TabIndex = 8;
             // 
             // btnCreat
             // 
+            btnCreat.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            btnCreat.BackColor = Color.MediumSeaGreen;
             btnCreat.FlatAppearance.BorderColor = Color.White;
             btnCreat.FlatAppearance.MouseDownBackColor = Color.FromArgb(192, 255, 192);
             btnCreat.FlatAppearance.MouseOverBackColor = Color.White;
             btnCreat.FlatStyle = FlatStyle.Popup;
             btnCreat.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnCreat.Location = new Point(353, 131);
+            btnCreat.Location = new Point(423, 391);
             btnCreat.Name = "btnCreat";
             btnCreat.Size = new Size(116, 39);
             btnCreat.TabIndex = 7;
             btnCreat.Text = "Create";
-            btnCreat.UseVisualStyleBackColor = true;
+            btnCreat.UseVisualStyleBackColor = false;
             btnCreat.Click += btnCreat_Click;
             // 
             // lblInput
             // 
-            lblInput.AutoSize = true;
+            lblInput.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            lblInput.BackColor = Color.Transparent;
             lblInput.FlatStyle = FlatStyle.Flat;
             lblInput.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblInput.ForeColor = Color.Lime;
-            lblInput.Location = new Point(365, 0);
+            lblInput.ForeColor = Color.Black;
+            lblInput.Location = new Point(27, 262);
             lblInput.Name = "lblInput";
-            lblInput.Size = new Size(134, 54);
+            lblInput.Size = new Size(915, 54);
             lblInput.TabIndex = 6;
             lblInput.Text = "INPUT";
+            lblInput.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // btnClear
             // 
+            btnClear.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            btnClear.BackColor = Color.MediumSeaGreen;
             btnClear.FlatAppearance.BorderColor = Color.White;
             btnClear.FlatAppearance.MouseDownBackColor = Color.FromArgb(192, 255, 192);
             btnClear.FlatAppearance.MouseOverBackColor = Color.White;
             btnClear.FlatStyle = FlatStyle.Popup;
             btnClear.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnClear.Location = new Point(502, 310);
+            btnClear.Location = new Point(589, 596);
             btnClear.Name = "btnClear";
             btnClear.Size = new Size(116, 42);
             btnClear.TabIndex = 5;
             btnClear.Text = "Clear";
-            btnClear.UseVisualStyleBackColor = true;
+            btnClear.UseVisualStyleBackColor = false;
             btnClear.Click += button1_Click;
             // 
             // btnRun
             // 
+            btnRun.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            btnRun.BackColor = Color.MediumSeaGreen;
             btnRun.FlatAppearance.BorderColor = Color.White;
             btnRun.FlatAppearance.MouseDownBackColor = Color.FromArgb(192, 255, 192);
             btnRun.FlatAppearance.MouseOverBackColor = Color.White;
             btnRun.FlatStyle = FlatStyle.Popup;
             btnRun.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnRun.Location = new Point(245, 310);
+            btnRun.Location = new Point(249, 596);
             btnRun.Name = "btnRun";
             btnRun.Size = new Size(116, 42);
             btnRun.TabIndex = 4;
             btnRun.Text = "Run";
-            btnRun.UseVisualStyleBackColor = true;
+            btnRun.UseVisualStyleBackColor = false;
             btnRun.Click += btnRun_Click;
             // 
             // txbInputDemand
             // 
-            txbInputDemand.Location = new Point(174, 196);
+            txbInputDemand.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            txbInputDemand.BackColor = Color.WhiteSmoke;
+            txbInputDemand.Location = new Point(236, 447);
             txbInputDemand.Name = "txbInputDemand";
-            txbInputDemand.Size = new Size(129, 27);
+            txbInputDemand.Size = new Size(161, 27);
             txbInputDemand.TabIndex = 3;
             // 
             // txbInputSupply
             // 
-            txbInputSupply.Location = new Point(174, 67);
+            txbInputSupply.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            txbInputSupply.BackColor = Color.WhiteSmoke;
+            txbInputSupply.Location = new Point(236, 343);
             txbInputSupply.Name = "txbInputSupply";
-            txbInputSupply.Size = new Size(129, 27);
+            txbInputSupply.Size = new Size(161, 27);
             txbInputSupply.TabIndex = 2;
             // 
             // lblDemand
             // 
-            lblDemand.AutoSize = true;
+            lblDemand.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            lblDemand.BackColor = Color.Transparent;
             lblDemand.FlatStyle = FlatStyle.Flat;
             lblDemand.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblDemand.ForeColor = Color.Lime;
-            lblDemand.Location = new Point(50, 195);
+            lblDemand.ForeColor = Color.Black;
+            lblDemand.Location = new Point(110, 441);
             lblDemand.Name = "lblDemand";
-            lblDemand.Size = new Size(101, 31);
+            lblDemand.Size = new Size(107, 31);
             lblDemand.TabIndex = 1;
             lblDemand.Text = "Demand";
             // 
             // lblSupply
             // 
-            lblSupply.AutoSize = true;
+            lblSupply.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            lblSupply.BackColor = Color.Transparent;
             lblSupply.FlatStyle = FlatStyle.Flat;
             lblSupply.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblSupply.ForeColor = Color.Lime;
-            lblSupply.Location = new Point(50, 63);
+            lblSupply.ForeColor = Color.Black;
+            lblSupply.Location = new Point(110, 343);
             lblSupply.Name = "lblSupply";
-            lblSupply.Size = new Size(84, 31);
+            lblSupply.Size = new Size(90, 31);
             lblSupply.TabIndex = 0;
             lblSupply.Text = "Supply";
             // 
             // txbResult
             // 
+            txbResult.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             txbResult.BackColor = SystemColors.ActiveCaption;
-            txbResult.Location = new Point(284, 80);
+            txbResult.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txbResult.ForeColor = Color.Black;
+            txbResult.Location = new Point(297, 78);
             txbResult.Multiline = true;
             txbResult.Name = "txbResult";
             txbResult.ReadOnly = true;
             txbResult.ScrollBars = ScrollBars.Vertical;
-            txbResult.Size = new Size(378, 159);
+            txbResult.Size = new Size(384, 159);
             txbResult.TabIndex = 1;
             // 
             // lblMaxFlow
             // 
+            lblMaxFlow.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             lblMaxFlow.AutoSize = true;
+            lblMaxFlow.BackColor = Color.Transparent;
+            lblMaxFlow.FlatStyle = FlatStyle.Flat;
             lblMaxFlow.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblMaxFlow.Location = new Point(284, 9);
+            lblMaxFlow.Location = new Point(297, 7);
             lblMaxFlow.Name = "lblMaxFlow";
             lblMaxFlow.Size = new Size(203, 31);
             lblMaxFlow.TabIndex = 2;
@@ -190,35 +201,97 @@
             // 
             // label1
             // 
+            label1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI Light", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(284, 49);
+            label1.Location = new Point(297, 47);
             label1.Name = "label1";
             label1.Size = new Size(230, 28);
             label1.TabIndex = 3;
             label1.Text = "Edges (forward) with flow:";
             // 
+            // lblMauSupply
+            // 
+            lblMauSupply.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            lblMauSupply.BackColor = Color.Transparent;
+            lblMauSupply.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblMauSupply.Location = new Point(236, 382);
+            lblMauSupply.Name = "lblMauSupply";
+            lblMauSupply.Size = new Size(153, 20);
+            lblMauSupply.TabIndex = 9;
+            lblMauSupply.Text = "Example -S0: 5, 10, 40";
+            lblMauSupply.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // lblMauDemand
+            // 
+            lblMauDemand.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            lblMauDemand.BackColor = Color.Transparent;
+            lblMauDemand.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblMauDemand.Location = new Point(236, 488);
+            lblMauDemand.Name = "lblMauDemand";
+            lblMauDemand.Size = new Size(140, 20);
+            lblMauDemand.TabIndex = 10;
+            lblMauDemand.Text = "Example -D0: 20,7,3";
+            lblMauDemand.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // lblExCapa
+            // 
+            lblExCapa.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            lblExCapa.BackColor = Color.Transparent;
+            lblExCapa.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblExCapa.Location = new Point(571, 535);
+            lblExCapa.Name = "lblExCapa";
+            lblExCapa.Size = new Size(239, 46);
+            lblExCapa.TabIndex = 11;
+            lblExCapa.Text = "Enter a non-negative integer. \r\nFor example: S0 → D0 = 8";
+            lblExCapa.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // label2
+            // 
+            label2.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.Black;
+            label2.Location = new Point(284, 240);
+            label2.Name = "label2";
+            label2.Size = new Size(203, 20);
+            label2.TabIndex = 12;
+            label2.Text = "SRC: Source, SNK: Sink.";
+            label2.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // CalculaterMF
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(987, 661);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(993, 661);
+            Controls.Add(label2);
+            Controls.Add(lblExCapa);
+            Controls.Add(lblMauDemand);
+            Controls.Add(lblMauSupply);
+            Controls.Add(dgvCapacity);
             Controls.Add(label1);
+            Controls.Add(btnRun);
+            Controls.Add(btnClear);
+            Controls.Add(btnCreat);
             Controls.Add(lblMaxFlow);
             Controls.Add(txbResult);
-            Controls.Add(pnlInput);
+            Controls.Add(lblInput);
+            Controls.Add(txbInputDemand);
+            Controls.Add(lblSupply);
+            Controls.Add(txbInputSupply);
+            Controls.Add(lblDemand);
+            DoubleBuffered = true;
             Name = "CalculaterMF";
             Text = "CalculaterMF";
-            pnlInput.ResumeLayout(false);
-            pnlInput.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dgvCapacity).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private Panel pnlInput;
         private TextBox txbInputSupply;
         private Label lblDemand;
         private Label lblSupply;
@@ -231,5 +304,10 @@
         private DataGridView dgvCapacity;
         private Label lblMaxFlow;
         private Label label1;
+        private DoubleBufferedPanel panelInput;
+        private Label lblMauSupply;
+        private Label lblMauDemand;
+        private Label lblExCapa;
+        private Label label2;
     }
 }

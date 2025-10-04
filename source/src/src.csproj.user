@@ -7,6 +7,9 @@
     <Compile Update="UI\GraphVisualizer.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="UI\Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="UI\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
