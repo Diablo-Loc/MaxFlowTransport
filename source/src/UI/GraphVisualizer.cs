@@ -195,17 +195,18 @@ namespace src.UI
             else if (mode == "SelectSourceMulti")
             {
                 var hit = FindNodeAt(e.X, e.Y);
-                if (!sourceNodes.Contains(hit))
+                if (hit != null && !sourceNodes.Contains(hit))
                     sourceNodes.Add(hit);
                 pnlDraw.Invalidate();
             }
             else if (mode == "SelectSinkMulti")
             {
                 var hit = FindNodeAt(e.X, e.Y);
-                if (!sinkNodes.Contains(hit))
+                if (hit != null && !sinkNodes.Contains(hit))
                     sinkNodes.Add(hit);
                 pnlDraw.Invalidate();
             }
+
 
         }
         private Node FindNodeAt(int x, int y)
@@ -254,9 +255,13 @@ namespace src.UI
 
             return null;
         }
+        
         private void PanelDraw_Paint(object sender, PaintEventArgs e)
         {
             var g = e.Graphics;
+            g.SmoothingMode = SmoothingMode.AntiAlias;
+            g.PixelOffsetMode = PixelOffsetMode.HighQuality;
+            g.InterpolationMode = InterpolationMode.HighQualityBicubic;
             g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
             g.Clear(Color.White);
 
@@ -272,13 +277,45 @@ namespace src.UI
 
                 // Tô màu và độ dày cạnh
                 Color edgeColor = (edgeData != null && edgeData.Flow > 0) ? Color.Blue : Color.Black;
-                float thickness = (edgeData != null && edgeData.Flow > 0) ? 2 + edgeData.Flow * 0.5f : 2;
+                float thickness = (edgeData != null && edgeData.Flow > 0)
+                    ? Math.Min(8, 2 + edgeData.Flow * 0.02f) // Giới hạn max 8px
+                    : 2;
 
+
+                float dx = to.X - from.X;
+                float dy = to.Y - from.Y;
+                float len = (float)Math.Sqrt(dx * dx + dy * dy);
+
+                // Bỏ qua nếu trùng điểm hoặc len quá nhỏ
+                if (len < 0.5f)
+                    continue;
+
+                // Giới hạn độ dài tối đa để tránh tràn (nếu cạnh cực lớn)
+                float maxLen = 1000f;
+                if (len > maxLen)
+                {
+                    float scale = maxLen / len;
+                    to = new Node(to._id, to._label, from.X + dx * scale, from.Y + dy * scale);
+                }
+
+                             
+                if (len < 0.1f) continue;
+
+                // Vector đơn vị
+                float ux = dx / len;
+                float uy = dy / len;
+
+                // Tính điểm bắt đầu & kết thúc (cách mép node ra)
+                PointF start = new PointF(from.X + ux * NODE_RADIUS, from.Y + uy * NODE_RADIUS);
+                PointF end = new PointF(to.X - ux * NODE_RADIUS, to.Y - uy * NODE_RADIUS);
+
+                // Vẽ mũi tên
                 using (var pen = new Pen(edgeColor, thickness))
                 {
-                    pen.CustomEndCap = new AdjustableArrowCap(4, 6, true);
-                    g.DrawLine(pen, from.X, from.Y, to.X, to.Y);
+                    pen.CustomEndCap = new AdjustableArrowCap(5, 7, true);
+                    g.DrawLine(pen, start, end);
                 }
+
 
                 // Tính vị trí nhãn
                 float midX = (from.X + to.X) / 2;
@@ -300,8 +337,9 @@ namespace src.UI
                     label = capacity.ToString();
                     brush = Brushes.DarkRed;
                 }
+                if (uiEdges.Count < 300)
+                    g.DrawString(label, edgeFont, brush, midX + offsetX, midY + offsetY);
 
-                g.DrawString(label, edgeFont, brush, midX + offsetX, midY + offsetY);
             }
 
             // Draw nodes
@@ -332,6 +370,7 @@ namespace src.UI
                 var sz = g.MeasureString(n._label, f);
                 g.DrawString(n._label, f, Brushes.Black, n.X - sz.Width / 2, n.Y - sz.Height / 2);
             }
+
         }
 
         private Graph BuildGraphFromUI()
@@ -516,15 +555,19 @@ namespace src.UI
 
                 foreach (var edge in uiEdges)
                 {
-                    newGraph.AddEdge(edge.Item1, edge.Item2, edge.Item3);
+                    if (edge.Item1 < newGraph._vertexCount && edge.Item2 < newGraph._vertexCount)
+                        newGraph.AddEdge(edge.Item1, edge.Item2, Math.Max(1, edge.Item3));
                 }
-                foreach (var s in sourceNodes)
+
+                foreach (var s in sourceNodes.Where(n => n != null))
                 {
-                    newGraph.AddEdge(superSource, s._id, int.MaxValue / 2);
+                    newGraph.AddEdge(superSource, s._id, int.MaxValue / 4);
                 }
-                foreach (var t in sinkNodes)
+
+
+                foreach (var t in sinkNodes.Where(n => n != null))
                 {
-                    newGraph.AddEdge(t._id, superSink, int.MaxValue / 2);
+                    newGraph.AddEdge(t._id, superSink, int.MaxValue / 4);
                 }
                 if (!CheckReachability(newGraph.GetAllEdges().ToList(), sourceNodes, sinkNodes))
                 {
@@ -549,14 +592,18 @@ namespace src.UI
         {
             foreach (var s in sources)
             {
+                if (s == null) continue;
                 foreach (var t in sinks)
                 {
+                    if (t == null) continue;
+
                     if (HasPath(edges, s._id, t._id))
                         return true;
                 }
             }
             return false;
         }
+
         private bool HasPath(List<Edge> edges, int sourceId, int sinkId)
         {
             var visited = new HashSet<int>();

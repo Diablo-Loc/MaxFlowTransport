@@ -1,0 +1,5 @@
+Supply: 10,15
+Demand: 5,10,10
+Matrix:
+-2 3 5
+1 -1 4

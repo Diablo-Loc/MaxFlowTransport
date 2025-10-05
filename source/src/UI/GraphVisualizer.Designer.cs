@@ -99,7 +99,7 @@
             lblMaxFlow.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblMaxFlow.Location = new Point(501, 605);
             lblMaxFlow.Name = "lblMaxFlow";
-            lblMaxFlow.Size = new Size(36, 28);
+            lblMaxFlow.Size = new Size(180, 28);
             lblMaxFlow.TabIndex = 5;
             lblMaxFlow.Text = "---";
             lblMaxFlow.TextAlign = ContentAlignment.MiddleCenter;

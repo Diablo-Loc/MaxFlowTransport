@@ -3,60 +3,112 @@
   "WorkspaceRootPath": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\ui\\calculatermf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|solutionrelative:ui\\calculatermf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|d:\\h\u1ECDc t\u1EADp\\7.hoc_tren_lop\\toan_roi_rac\\maxflowtransport\\source\\src\\data test\\test 10.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|solutionrelative:data test\\test 10.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|d:\\h\u1ECDc t\u1EADp\\7.hoc_tren_lop\\toan_roi_rac\\maxflowtransport\\source\\src\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|d:\\h\u1ECDc t\u1EADp\\7.hoc_tren_lop\\toan_roi_rac\\maxflowtransport\\source\\src\\src.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|solutionrelative:src.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|d:\\h\u1ECDc t\u1EADp\\7.hoc_tren_lop\\toan_roi_rac\\maxflowtransport\\source\\src\\ui\\calculatermf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|solutionrelative:ui\\calculatermf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|d:\\h\u1ECDc t\u1EADp\\7.hoc_tren_lop\\toan_roi_rac\\maxflowtransport\\source\\src\\data test\\test1.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|solutionrelative:data test\\test1.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\ui\\calculatermf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|solutionrelative:ui\\calculatermf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|d:\\h\u1ECDc t\u1EADp\\7.hoc_tren_lop\\toan_roi_rac\\maxflowtransport\\source\\src\\models\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|solutionrelative:models\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|d:\\h\u1ECDc t\u1EADp\\7.hoc_tren_lop\\toan_roi_rac\\maxflowtransport\\source\\src\\data test\\test 11.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|solutionrelative:data test\\test 11.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|d:\\h\u1ECDc t\u1EADp\\7.hoc_tren_lop\\toan_roi_rac\\maxflowtransport\\source\\src\\data test\\test 12.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|solutionrelative:data test\\test 12.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|d:\\h\u1ECDc t\u1EADp\\7.hoc_tren_lop\\toan_roi_rac\\maxflowtransport\\source\\src\\data test\\test 4.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|solutionrelative:data test\\test 4.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|d:\\h\u1ECDc t\u1EADp\\7.hoc_tren_lop\\toan_roi_rac\\maxflowtransport\\source\\src\\data test\\test 2.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|solutionrelative:data test\\test 2.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|d:\\h\u1ECDc t\u1EADp\\7.hoc_tren_lop\\toan_roi_rac\\maxflowtransport\\source\\src\\data test\\test 1.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|solutionrelative:data test\\test 1.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|d:\\h\u1ECDc t\u1EADp\\7.hoc_tren_lop\\toan_roi_rac\\maxflowtransport\\source\\src\\data test\\test 3.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|solutionrelative:data test\\test 3.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|d:\\h\u1ECDc t\u1EADp\\7.hoc_tren_lop\\toan_roi_rac\\maxflowtransport\\source\\src\\data test\\test 5.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|solutionrelative:data test\\test 5.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|d:\\h\u1ECDc t\u1EADp\\7.hoc_tren_lop\\toan_roi_rac\\maxflowtransport\\source\\src\\data test\\test 6.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|solutionrelative:data test\\test 6.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|d:\\h\u1ECDc t\u1EADp\\7.hoc_tren_lop\\toan_roi_rac\\maxflowtransport\\source\\src\\data test\\test 7.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|solutionrelative:data test\\test 7.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|d:\\h\u1ECDc t\u1EADp\\7.hoc_tren_lop\\toan_roi_rac\\maxflowtransport\\source\\src\\data test\\test 8.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|solutionrelative:data test\\test 8.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|d:\\h\u1ECDc t\u1EADp\\7.hoc_tren_lop\\toan_roi_rac\\maxflowtransport\\source\\src\\ui\\graphvisualizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|solutionrelative:ui\\graphvisualizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|d:\\h\u1ECDc t\u1EADp\\7.hoc_tren_lop\\toan_roi_rac\\maxflowtransport\\source\\src\\algorithms\\maxflowsolve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|solutionrelative:algorithms\\maxflowsolve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\ui\\graphvisualizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|solutionrelative:ui\\graphvisualizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|d:\\h\u1ECDc t\u1EADp\\7.hoc_tren_lop\\toan_roi_rac\\maxflowtransport\\source\\src\\models\\node.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|solutionrelative:models\\node.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|d:\\h\u1ECDc t\u1EADp\\7.hoc_tren_lop\\toan_roi_rac\\maxflowtransport\\source\\src\\algorithms\\bfs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|solutionrelative:algorithms\\bfs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|d:\\h\u1ECDc t\u1EADp\\7.hoc_tren_lop\\toan_roi_rac\\maxflowtransport\\source\\src\\algorithms\\fordfulkerson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|solutionrelative:algorithms\\fordfulkerson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|d:\\h\u1ECDc t\u1EADp\\7.hoc_tren_lop\\toan_roi_rac\\maxflowtransport\\source\\src\\models\\graph.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|solutionrelative:models\\graph.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\ui\\graphvisualizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|solutionrelative:ui\\graphvisualizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|d:\\h\u1ECDc t\u1EADp\\7.hoc_tren_lop\\toan_roi_rac\\maxflowtransport\\source\\src\\ui\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|solutionrelative:ui\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|d:\\h\u1ECDc t\u1EADp\\7.hoc_tren_lop\\toan_roi_rac\\maxflowtransport\\source\\src\\algorithms\\maxflowsolve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|solutionrelative:algorithms\\maxflowsolve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|d:\\h\u1ECDc t\u1EADp\\7.hoc_tren_lop\\toan_roi_rac\\maxflowtransport\\source\\src\\ui\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|solutionrelative:ui\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|d:\\h\u1ECDc t\u1EADp\\7.hoc_tren_lop\\toan_roi_rac\\maxflowtransport\\source\\src\\ui\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\ui\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|solutionrelative:ui\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|d:\\h\u1ECDc t\u1EADp\\7.hoc_tren_lop\\toan_roi_rac\\maxflowtransport\\source\\src\\src.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|solutionrelative:src.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|d:\\h\u1ECDc t\u1EADp\\7.hoc_tren_lop\\toan_roi_rac\\maxflowtransport\\source\\src\\models\\graph.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|solutionrelative:models\\graph.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|d:\\h\u1ECDc t\u1EADp\\7.hoc_tren_lop\\toan_roi_rac\\maxflowtransport\\source\\src\\models\\edge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|solutionrelative:models\\edge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|d:\\h\u1ECDc t\u1EADp\\7.hoc_tren_lop\\toan_roi_rac\\maxflowtransport\\source\\src\\models\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|solutionrelative:models\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|d:\\h\u1ECDc t\u1EADp\\7.hoc_tren_lop\\toan_roi_rac\\maxflowtransport\\source\\src\\algorithms\\fordfulkerson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|solutionrelative:algorithms\\fordfulkerson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|d:\\h\u1ECDc t\u1EADp\\7.hoc_tren_lop\\toan_roi_rac\\maxflowtransport\\source\\src\\ui\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|solutionrelative:ui\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\ui\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -79,18 +131,6 @@
       "RelativeMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|solutionrelative:ui\\calculatermf.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|d:\\h\u1ECDc t\u1EADp\\7.hoc_tren_lop\\toan_roi_rac\\maxflowtransport\\source\\src\\models\\node.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|solutionrelative:models\\node.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|d:\\h\u1ECDc t\u1EADp\\7.hoc_tren_lop\\toan_roi_rac\\maxflowtransport\\source\\src\\models\\edge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|solutionrelative:models\\edge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|d:\\h\u1ECDc t\u1EADp\\7.hoc_tren_lop\\toan_roi_rac\\maxflowtransport\\source\\src\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|d:\\h\u1ECDc t\u1EADp\\7.hoc_tren_lop\\toan_roi_rac\\maxflowtransport\\source\\src\\ui\\graphvisualizer.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB046BE7-168F-4D8E-8F6B-CE9CC75EBD01}|src.csproj|solutionrelative:ui\\graphvisualizer.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -105,7 +145,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -113,31 +153,162 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "test1.txt",
-              "DocumentMoniker": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\Data Test\\test1.txt",
-              "RelativeDocumentMoniker": "Data Test\\test1.txt",
-              "ToolTip": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\Data Test\\test1.txt",
-              "RelativeToolTip": "Data Test\\test1.txt",
+              "DocumentIndex": 5,
+              "Title": "Test 11.txt",
+              "DocumentMoniker": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\Data Test\\Test 11.txt",
+              "RelativeDocumentMoniker": "Data Test\\Test 11.txt",
+              "ToolTip": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\Data Test\\Test 11.txt",
+              "RelativeToolTip": "Data Test\\Test 11.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-10-05T15:53:50.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Test 12.txt",
+              "DocumentMoniker": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\Data Test\\Test 12.txt",
+              "RelativeDocumentMoniker": "Data Test\\Test 12.txt",
+              "ToolTip": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\Data Test\\Test 12.txt",
+              "RelativeToolTip": "Data Test\\Test 12.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-10-05T15:53:45.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Test 10.txt",
+              "DocumentMoniker": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\Data Test\\Test 10.txt",
+              "RelativeDocumentMoniker": "Data Test\\Test 10.txt",
+              "ToolTip": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\Data Test\\Test 10.txt",
+              "RelativeToolTip": "Data Test\\Test 10.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-10-05T15:52:37.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Test 1.txt",
+              "DocumentMoniker": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\Data Test\\Test 1.txt",
+              "RelativeDocumentMoniker": "Data Test\\Test 1.txt",
+              "ToolTip": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\Data Test\\Test 1.txt",
+              "RelativeToolTip": "Data Test\\Test 1.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-10-05T15:52:37.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Test 4.txt",
+              "DocumentMoniker": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\Data Test\\Test 4.txt",
+              "RelativeDocumentMoniker": "Data Test\\Test 4.txt",
+              "ToolTip": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\Data Test\\Test 4.txt",
+              "RelativeToolTip": "Data Test\\Test 4.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-10-04T13:07:37.758Z",
+              "WhenOpened": "2025-10-05T15:51:06.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Test 8.txt",
+              "DocumentMoniker": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\Data Test\\Test 8.txt",
+              "RelativeDocumentMoniker": "Data Test\\Test 8.txt",
+              "ToolTip": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\Data Test\\Test 8.txt",
+              "RelativeToolTip": "Data Test\\Test 8.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-10-05T15:50:30.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Test 5.txt",
+              "DocumentMoniker": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\Data Test\\Test 5.txt",
+              "RelativeDocumentMoniker": "Data Test\\Test 5.txt",
+              "ToolTip": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\Data Test\\Test 5.txt",
+              "RelativeToolTip": "Data Test\\Test 5.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-10-05T15:50:28.441Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
+              "Title": "Test 7.txt",
+              "DocumentMoniker": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\Data Test\\Test 7.txt",
+              "RelativeDocumentMoniker": "Data Test\\Test 7.txt",
+              "ToolTip": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\Data Test\\Test 7.txt",
+              "RelativeToolTip": "Data Test\\Test 7.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-10-05T15:50:25.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Test 6.txt",
+              "DocumentMoniker": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\Data Test\\Test 6.txt",
+              "RelativeDocumentMoniker": "Data Test\\Test 6.txt",
+              "ToolTip": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\Data Test\\Test 6.txt",
+              "RelativeToolTip": "Data Test\\Test 6.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-10-05T15:48:44.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Test 3.txt",
+              "DocumentMoniker": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\Data Test\\Test 3.txt",
+              "RelativeDocumentMoniker": "Data Test\\Test 3.txt",
+              "ToolTip": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\Data Test\\Test 3.txt",
+              "RelativeToolTip": "Data Test\\Test 3.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-10-05T15:48:35.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Test 2.txt",
+              "DocumentMoniker": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\Data Test\\Test 2.txt",
+              "RelativeDocumentMoniker": "Data Test\\Test 2.txt",
+              "ToolTip": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\Data Test\\Test 2.txt",
+              "RelativeToolTip": "Data Test\\Test 2.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-10-05T15:48:31.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "src",
               "DocumentMoniker": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\src.csproj",
               "RelativeDocumentMoniker": "src.csproj",
               "ToolTip": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\src.csproj",
               "RelativeToolTip": "src.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-04T08:01:46.721Z"
+              "WhenOpened": "2025-10-04T08:01:46.721Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 29,
               "Title": "Home.Designer.cs",
               "DocumentMoniker": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\UI\\Home.Designer.cs",
               "RelativeDocumentMoniker": "UI\\Home.Designer.cs",
@@ -145,12 +316,11 @@
               "RelativeToolTip": "UI\\Home.Designer.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAuwCYAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-04T07:22:01.396Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-04T07:22:01.396Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 20,
               "Title": "Home.cs",
               "DocumentMoniker": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\UI\\Home.cs",
               "RelativeDocumentMoniker": "UI\\Home.cs",
@@ -163,19 +333,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 21,
               "Title": "Home.cs [Design]",
               "DocumentMoniker": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\UI\\Home.cs",
               "RelativeDocumentMoniker": "UI\\Home.cs",
               "ToolTip": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\UI\\Home.cs [Design]",
               "RelativeToolTip": "UI\\Home.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-04T07:15:47.639Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-10-04T07:15:47.639Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 30,
               "Title": "FormDragger.cs",
               "DocumentMoniker": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\UI\\Controls\\FormDragger.cs",
               "RelativeDocumentMoniker": "UI\\Controls\\FormDragger.cs",
@@ -187,7 +356,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 28,
               "Title": "MainForm.Designer.cs",
               "DocumentMoniker": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\UI\\MainForm.Designer.cs",
               "RelativeDocumentMoniker": "UI\\MainForm.Designer.cs",
@@ -199,12 +368,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 31,
               "Title": "CalculaterMF.Designer.cs",
               "DocumentMoniker": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\UI\\CalculaterMF.Designer.cs",
               "RelativeDocumentMoniker": "UI\\CalculaterMF.Designer.cs",
-              "ToolTip": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\UI\\CalculaterMF.Designer.cs*",
-              "RelativeToolTip": "UI\\CalculaterMF.Designer.cs*",
+              "ToolTip": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\UI\\CalculaterMF.Designer.cs",
+              "RelativeToolTip": "UI\\CalculaterMF.Designer.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAywBgAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-04T02:41:22.127Z",
@@ -212,20 +381,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 15,
               "Title": "GraphVisualizer.cs",
               "DocumentMoniker": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\UI\\GraphVisualizer.cs",
               "RelativeDocumentMoniker": "UI\\GraphVisualizer.cs",
               "ToolTip": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\UI\\GraphVisualizer.cs",
               "RelativeToolTip": "UI\\GraphVisualizer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYCAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAACgBAAAAAAAAAAAswD0BAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-02T09:19:20.905Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 26,
               "Title": "MainForm.cs",
               "DocumentMoniker": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\UI\\MainForm.cs",
               "RelativeDocumentMoniker": "UI\\MainForm.cs",
@@ -238,19 +407,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 16,
               "Title": "GraphVisualizer.cs [Design]",
               "DocumentMoniker": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\UI\\GraphVisualizer.cs",
               "RelativeDocumentMoniker": "UI\\GraphVisualizer.cs",
               "ToolTip": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\UI\\GraphVisualizer.cs [Design]",
               "RelativeToolTip": "UI\\GraphVisualizer.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T09:52:51.177Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-10-02T09:52:51.177Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 32,
               "Title": "GraphVisualizer.Designer.cs",
               "DocumentMoniker": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\UI\\GraphVisualizer.Designer.cs",
               "RelativeDocumentMoniker": "UI\\GraphVisualizer.Designer.cs",
@@ -258,50 +426,48 @@
               "RelativeToolTip": "UI\\GraphVisualizer.Designer.cs",
               "ViewState": "AgIAAJkAAAAAAAAAAAAjwKcAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T09:19:32.343Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-02T09:19:32.343Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "CalculaterMF.cs",
               "DocumentMoniker": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\UI\\CalculaterMF.cs",
               "RelativeDocumentMoniker": "UI\\CalculaterMF.cs",
-              "ToolTip": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\UI\\CalculaterMF.cs*",
-              "RelativeToolTip": "UI\\CalculaterMF.cs*",
-              "ViewState": "AgIAALgAAAAAAAAAAAAiwL4AAAAJAAAAAAAAAA==",
+              "ToolTip": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\UI\\CalculaterMF.cs",
+              "RelativeToolTip": "UI\\CalculaterMF.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAywCgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-02T02:55:59.428Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "CalculaterMF.cs [Design]",
               "DocumentMoniker": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\UI\\CalculaterMF.cs",
               "RelativeDocumentMoniker": "UI\\CalculaterMF.cs",
-              "ToolTip": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\UI\\CalculaterMF.cs [Design]*",
-              "RelativeToolTip": "UI\\CalculaterMF.cs [Design]*",
+              "ToolTip": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\UI\\CalculaterMF.cs [Design]",
+              "RelativeToolTip": "UI\\CalculaterMF.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-02T02:53:48.299Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 18,
               "Title": "Bfs.cs",
               "DocumentMoniker": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\Algorithms\\Bfs.cs",
               "RelativeDocumentMoniker": "Algorithms\\Bfs.cs",
               "ToolTip": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\Algorithms\\Bfs.cs",
               "RelativeToolTip": "Algorithms\\Bfs.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAowBMAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T03:04:53.613Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T03:04:53.613Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 33,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src_testcode\\Program.cs",
               "RelativeDocumentMoniker": "..\\src_testcode\\Program.cs",
@@ -313,20 +479,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 19,
               "Title": "MaxFlowSolve.cs",
               "DocumentMoniker": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\Algorithms\\MaxFlowSolve.cs",
               "RelativeDocumentMoniker": "Algorithms\\MaxFlowSolve.cs",
               "ToolTip": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\Algorithms\\MaxFlowSolve.cs",
               "RelativeToolTip": "Algorithms\\MaxFlowSolve.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABEAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAiwBEAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T05:22:07.353Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-21T05:22:07.353Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 25,
               "Title": "FordFulkerson.cs",
               "DocumentMoniker": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\Algorithms\\FordFulkerson.cs",
               "RelativeDocumentMoniker": "Algorithms\\FordFulkerson.cs",
@@ -334,12 +499,11 @@
               "RelativeToolTip": "Algorithms\\FordFulkerson.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T05:21:56.647Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-21T05:21:56.647Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 24,
               "Title": "Utils.cs",
               "DocumentMoniker": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\Models\\Utils.cs",
               "RelativeDocumentMoniker": "Models\\Utils.cs",
@@ -347,49 +511,47 @@
               "RelativeToolTip": "Models\\Utils.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T05:21:46.648Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-21T05:21:46.648Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "Edge.cs",
               "DocumentMoniker": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\Models\\Edge.cs",
               "RelativeDocumentMoniker": "Models\\Edge.cs",
               "ToolTip": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\Models\\Edge.cs",
               "RelativeToolTip": "Models\\Edge.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAywB8AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAIBAwB8AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-21T05:21:33.476Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 17,
               "Title": "Node.cs",
               "DocumentMoniker": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\Models\\Node.cs",
               "RelativeDocumentMoniker": "Models\\Node.cs",
               "ToolTip": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\Models\\Node.cs",
               "RelativeToolTip": "Models\\Node.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwBIAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-21T05:21:25.582Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 22,
               "Title": "Graph.cs",
               "DocumentMoniker": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\Models\\Graph.cs",
               "RelativeDocumentMoniker": "Models\\Graph.cs",
               "ToolTip": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\Models\\Graph.cs",
               "RelativeToolTip": "Models\\Graph.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAIwDcAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T05:21:16.645Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-21T05:21:16.645Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 27,
               "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\UI\\MainForm.cs",
               "RelativeDocumentMoniker": "UI\\MainForm.cs",
@@ -400,7 +562,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\H\u1ECDc t\u1EADp\\7.Hoc_tren_lop\\Toan_roi_rac\\MaxFlowTransport\\source\\src\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -408,7 +570,8 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T05:19:33.294Z"
+              "WhenOpened": "2025-09-21T05:19:33.294Z",
+              "EditorCaption": ""
             }
           ]
         }

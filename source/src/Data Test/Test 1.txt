@@ -1,0 +1,4 @@
+Supply: 10
+Demand: 10
+Matrix:
+10

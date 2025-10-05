@@ -281,6 +281,7 @@ namespace src.UI
             cbTestCase.Location = new Point(306, 530);
             cbTestCase.Name = "cbTestCase";
             cbTestCase.Size = new Size(91, 28);
+            cbTestCase.Sorted = true;
             cbTestCase.TabIndex = 14;
             // 
             // CalculaterMF
