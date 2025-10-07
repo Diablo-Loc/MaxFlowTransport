@@ -8,6 +8,7 @@ namespace src.Models
 {
     public class Edge
     {
+        public bool IsHovered = false;
         public int From { get; set; }     // đỉnh xuất phát
         public int To { get; set; }       // đỉnh đích
         public int Capacity { get; set; } // sức chứa

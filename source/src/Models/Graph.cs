@@ -50,7 +50,7 @@ namespace src.Models
         {
             foreach (var list in _adj)
                 foreach (var e in list)
-                    if (e.Capacity > 0)   // bỏ reverse có capacity = 0
+                    if (e.Capacity > 0)   // bỏ reverse nếu có capacity = 0
                         yield return e;
         }
         

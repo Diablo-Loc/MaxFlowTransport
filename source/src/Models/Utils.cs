@@ -19,6 +19,7 @@ namespace src.Models
 
             return (supply, demand, cap);
         }*/
+        //Lấy supply và demand từ input của textbox vào và random capacity
         public static int[,] SampleCapacity(int supplyCount, int demandCount)
         {
             int[,] cap = new int[supplyCount, demandCount];
@@ -28,12 +29,12 @@ namespace src.Models
             {
                 for (int j = 0; j < demandCount; j++)
                 {
-                    cap[i, j] = rnd.Next(5, 15); // random capacity
+                    cap[i, j] = rnd.Next(5, 15); 
                 }
             }
             return cap;
         }
-
+        
         public static Graph BuildTransportationGraph(int[]cung, int[]cau, int[,] capacity)
         {
             int m=cung.Length;
