@@ -1,4 +1,5 @@
 ﻿using System.Drawing;
+using System.Windows.Forms;
 
 namespace src.UI
 {
@@ -47,11 +48,10 @@ namespace src.UI
             lblChooseTestCase = new Label();
             cbTestCase = new ComboBox();
             pnlDraw = new Panel();
-            pnlZoom = new Panel();
-            bntzomin = new Button();
-            btnzomout = new Button();
             pnlTicker = new Panel();
             lblTicker = new Label();
+            btnzomout = new Button();
+            bntzomin = new Button();
             chkEnableBalancing = new CheckBox();
             chkEnableAnimation = new CheckBox();
             chkColorByFlow = new CheckBox();
@@ -60,7 +60,6 @@ namespace src.UI
             zoomTip = new ToolTip(components);
             ((System.ComponentModel.ISupportInitialize)dgvCapacity).BeginInit();
             pnlDraw.SuspendLayout();
-            pnlZoom.SuspendLayout();
             pnlTicker.SuspendLayout();
             pnlInput.SuspendLayout();
             SuspendLayout();
@@ -84,7 +83,7 @@ namespace src.UI
             btnCreat.BackColor = Color.MediumSeaGreen;
             btnCreat.FlatAppearance.BorderColor = Color.White;
             btnCreat.FlatAppearance.MouseDownBackColor = Color.FromArgb(192, 255, 192);
-            btnCreat.FlatAppearance.MouseOverBackColor = Color.White;
+            btnCreat.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 150, 36);
             btnCreat.FlatStyle = FlatStyle.Popup;
             btnCreat.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnCreat.Location = new Point(464, 130);
@@ -102,7 +101,7 @@ namespace src.UI
             lblInput.FlatStyle = FlatStyle.Flat;
             lblInput.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblInput.ForeColor = Color.Black;
-            lblInput.Location = new Point(33, 0);
+            lblInput.Location = new Point(12, 0);
             lblInput.Name = "lblInput";
             lblInput.Size = new Size(957, 55);
             lblInput.TabIndex = 6;
@@ -115,7 +114,7 @@ namespace src.UI
             btnClear.BackColor = Color.MediumSeaGreen;
             btnClear.FlatAppearance.BorderColor = Color.White;
             btnClear.FlatAppearance.MouseDownBackColor = Color.FromArgb(192, 255, 192);
-            btnClear.FlatAppearance.MouseOverBackColor = Color.White;
+            btnClear.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 150, 36);
             btnClear.FlatStyle = FlatStyle.Popup;
             btnClear.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnClear.Location = new Point(642, 287);
@@ -132,7 +131,7 @@ namespace src.UI
             btnRun.BackColor = Color.MediumSeaGreen;
             btnRun.FlatAppearance.BorderColor = Color.White;
             btnRun.FlatAppearance.MouseDownBackColor = Color.FromArgb(192, 255, 192);
-            btnRun.FlatAppearance.MouseOverBackColor = Color.White;
+            btnRun.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 150, 36);
             btnRun.FlatStyle = FlatStyle.Popup;
             btnRun.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnRun.Location = new Point(259, 287);
@@ -196,9 +195,9 @@ namespace src.UI
             lblMaxFlow.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblMaxFlow.Location = new Point(0, 0);
             lblMaxFlow.Name = "lblMaxFlow";
-            lblMaxFlow.Size = new Size(203, 31);
+            lblMaxFlow.Size = new Size(227, 31);
             lblMaxFlow.TabIndex = 2;
-            lblMaxFlow.Text = "Maximum Flow =";
+            lblMaxFlow.Text = "Maximum Flow = --";
             // 
             // lblMauSupply
             // 
@@ -262,8 +261,9 @@ namespace src.UI
             // pnlDraw
             // 
             pnlDraw = new DoubleBufferedPanel();
-            pnlDraw.Controls.Add(pnlZoom);
             pnlDraw.Controls.Add(pnlTicker);
+            pnlDraw.Controls.Add(btnzomout);
+            pnlDraw.Controls.Add(bntzomin);
             pnlDraw.Controls.Add(chkEnableBalancing);
             pnlDraw.Controls.Add(chkEnableAnimation);
             pnlDraw.Controls.Add(chkColorByFlow);
@@ -275,35 +275,34 @@ namespace src.UI
             pnlDraw.Size = new Size(993, 661);
             pnlDraw.TabIndex = 15;
             // 
-            // pnlZoom
+            // pnlTicker
             // 
-            pnlZoom.BackColor = Color.Transparent;
-            pnlZoom.Controls.Add(bntzomin);
-            pnlZoom.Controls.Add(btnzomout);
-            pnlZoom.Dock = DockStyle.Bottom;
-            pnlZoom.Location = new Point(0, 609);
-            pnlZoom.Name = "pnlZoom";
-            pnlZoom.Size = new Size(993, 52);
-            pnlZoom.TabIndex = 26;
+            pnlTicker.Anchor = AnchorStyles.Top;
+            pnlTicker.BackColor = Color.Transparent;
+            pnlTicker.Controls.Add(lblTicker);
+            pnlTicker.Location = new Point(292, 3);
+            pnlTicker.Name = "pnlTicker";
+            pnlTicker.Size = new Size(508, 27);
+            pnlTicker.TabIndex = 25;
             // 
-            // bntzomin
+            // lblTicker
             // 
-            bntzomin.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            bntzomin.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            bntzomin.Location = new Point(968, 0);
-            bntzomin.Name = "bntzomin";
-            bntzomin.Size = new Size(25, 24);
-            bntzomin.TabIndex = 22;
-            bntzomin.Text = "+";
-            zoomTip.SetToolTip(bntzomin, "📌 Dùng con cuộn để phóng to/thu nhỏ\n🖱️ Giữ chuột giữa để di chuyển");
-            bntzomin.UseVisualStyleBackColor = true;
-            bntzomin.Click += bntzomin_Click;
+            lblTicker.Anchor = AnchorStyles.Top;
+            lblTicker.AutoSize = true;
+            lblTicker.ForeColor = Color.FromArgb(235, 128, 0);
+            lblTicker.Location = new Point(80, 6);
+            lblTicker.Name = "lblTicker";
+            lblTicker.Size = new Size(356, 20);
+            lblTicker.TabIndex = 24;
+            lblTicker.Text = "Bạn có thể di chuyển các node sao cho dễ nhìn hơn...";
+            lblTicker.TextAlign = ContentAlignment.MiddleLeft;
+            lblTicker.Visible = false;
             // 
             // btnzomout
             // 
-            btnzomout.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            btnzomout.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             btnzomout.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnzomout.Location = new Point(968, 28);
+            btnzomout.Location = new Point(3, 634);
             btnzomout.Name = "btnzomout";
             btnzomout.Size = new Size(25, 24);
             btnzomout.TabIndex = 23;
@@ -312,28 +311,18 @@ namespace src.UI
             btnzomout.UseVisualStyleBackColor = true;
             btnzomout.Click += btnzomout_Click;
             // 
-            // pnlTicker
+            // bntzomin
             // 
-            pnlTicker.BackColor = Color.Transparent;
-            pnlTicker.Controls.Add(lblTicker);
-            pnlTicker.Location = new Point(324, 3);
-            pnlTicker.Name = "pnlTicker";
-            pnlTicker.Size = new Size(434, 29);
-            pnlTicker.TabIndex = 25;
-            // 
-            // lblTicker
-            // 
-            lblTicker.Anchor = AnchorStyles.Top;
-            lblTicker.AutoSize = true;
-            lblTicker.BackColor = Color.Transparent;
-            lblTicker.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            lblTicker.ForeColor = Color.FromArgb(235, 157, 10);
-            lblTicker.Location = new Point(200, 5);
-            lblTicker.Name = "lblTicker";
-            lblTicker.Size = new Size(414, 23);
-            lblTicker.TabIndex = 24;
-            lblTicker.Text = "Bạn có thể di chuyển các node sao cho dễ nhìn hơn";
-            lblTicker.Visible = false;
+            bntzomin.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            bntzomin.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            bntzomin.Location = new Point(3, 609);
+            bntzomin.Name = "bntzomin";
+            bntzomin.Size = new Size(25, 24);
+            bntzomin.TabIndex = 22;
+            bntzomin.Text = "+";
+            zoomTip.SetToolTip(bntzomin, "📌 Dùng con cuộn để phóng to/thu nhỏ\n🖱️ Giữ chuột giữa để di chuyển");
+            bntzomin.UseVisualStyleBackColor = true;
+            bntzomin.Click += bntzomin_Click;
             // 
             // chkEnableBalancing
             // 
@@ -420,7 +409,6 @@ namespace src.UI
             ((System.ComponentModel.ISupportInitialize)dgvCapacity).EndInit();
             pnlDraw.ResumeLayout(false);
             pnlDraw.PerformLayout();
-            pnlZoom.ResumeLayout(false);
             pnlTicker.ResumeLayout(false);
             pnlTicker.PerformLayout();
             pnlInput.ResumeLayout(false);
@@ -453,10 +441,9 @@ namespace src.UI
         private CheckBox chkEnableAnimation;
         private CheckBox chkEnableBalancing;
         private ToolTip zoomTip;
-        private Label lblTicker;
         private Button bntzomin;
         private Button btnzomout;
+        private Label lblTicker;
         private Panel pnlTicker;
-        private Panel pnlZoom;
     }
 }

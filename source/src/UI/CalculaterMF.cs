@@ -1,5 +1,7 @@
-﻿using src.Algorithms;
+﻿using Microsoft.VisualBasic.Devices;
+using src.Algorithms;
 using src.Models;
+using src.UI.Controls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -39,15 +41,20 @@ namespace src.UI
         private Node draggingNode = null;
         private Point dragOffset;
         private string mode = "Select";
+        private Edge selectedEdge = null;
         public CalculaterMF()
         {
             InitializeComponent();
             this.DoubleBuffered = true;
+            StyleRoundedButton(btnCreat, 20);
+            StyleRoundedButton(btnRun, 20);
+            StyleRoundedButton(btnClear, 20);
             this.SetStyle(ControlStyles.AllPaintingInWmPaint |
                           ControlStyles.UserPaint |
                           ControlStyles.OptimizedDoubleBuffer, true);
             this.UpdateStyles();
             LoadTestCases();
+
             cbTestCase.SelectedIndexChanged += cbTestCase_SelectedIndexChanged;
             flowTimer = new System.Windows.Forms.Timer();
             flowTimer.Interval = 500;
@@ -197,12 +204,14 @@ namespace src.UI
                     cap = CloneMatrix(originalCap);
                     if (supply.Length + demand.Length > 6)
                     {
+                        lblTicker.Visible = true;
                         pnlTicker.Visible = true;
                         lblTicker.Left = pnlTicker.Width;
                         tickerTimer.Start();
                     }
                     else
                     {
+                        lblTicker.Visible = false;
                         pnlTicker.Visible = false;
                         tickerTimer.Stop();
                     }
@@ -312,13 +321,13 @@ namespace src.UI
             // ---- Vẽ cạnh ----
             foreach (var edge in uiEdges)
             {
+
                 Node from = Nodes.First(n => n._id == edge.Item1);
                 Node to = Nodes.First(n => n._id == edge.Item2);
                 int capacity = edge.Item3;
                 // Lấy dữ liệu flow (nếu có)
                 var edgeData = Edges.FirstOrDefault(ed => ed.From == from._id && ed.To == to._id);
                 int flow = edgeData?.Flow ?? 0;
-                //
                 bool isDummyEdge = (capacity == 0 && flow == 0);
                 // --- Chọn thông số hiển thị ---
                 float valueForThickness = chkColorByFlow.Checked ? flow : capacity;
@@ -419,6 +428,8 @@ namespace src.UI
                     }
                     g.DrawString(label, font, brush, midX + offsetX, midY + offsetY);
                 }
+                //hiệu ứng hover vào cạnh
+
             }
             // ---- Vẽ node ----
             const int R = 20;
@@ -595,6 +606,7 @@ namespace src.UI
         }
         private void PnlDraw_MouseDown(object sender, MouseEventArgs e)
         {
+            pnlDraw.Invalidate();
             if (e.Button == MouseButtons.Middle)
             {
                 isPanning = true;
@@ -662,7 +674,13 @@ namespace src.UI
             txbInputDemand.Clear();
             dgvCapacity.Columns.Clear();
             dgvCapacity.Rows.Clear();
-            lblMaxFlow.Text = ($"Maximum Flow = {0}");
+            Nodes.Clear();
+            Edges.Clear();
+            uiEdges.Clear();
+            pnlDraw.Invalidate();
+            lblMaxFlow.Text = ($"Maximum Flow = --");
+            cbTestCase.Text = ($"--");
+            lblTicker.Visible = false;
 
         }
         private void CreateCapacityGrid(int[] supply, int[] demand, int[,] defaultCap = null)
@@ -1003,7 +1021,30 @@ namespace src.UI
 
             pnlDraw.Invalidate();
         }
+        private void StyleRoundedButton(Button btn, int radius)
+        {
+            // Bo góc
+            GraphicsPath path = new GraphicsPath();
+            path.AddArc(0, 0, radius, radius, 180, 90);
+            path.AddArc(btn.Width - radius, 0, radius, radius, 270, 90);
+            path.AddArc(btn.Width - radius, btn.Height - radius, radius, radius, 0, 90);
+            path.AddArc(0, btn.Height - radius, radius, radius, 90, 90);
+            path.CloseFigure();
+            btn.Region = new Region(path);
+
+            // Giao diện
+            btn.FlatStyle = FlatStyle.Flat;
+            btn.FlatAppearance.BorderSize = 0;
+            btn.BackColor = ColorTranslator.FromHtml("#43a047");
+            btn.ForeColor = Color.Black;
+            btn.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+
+            // Hiệu ứng hover
+            btn.MouseEnter += (s, e) => btn.BackColor = Color.SeaGreen;
+            btn.MouseLeave += (s, e) => btn.BackColor = ColorTranslator.FromHtml("#43a047");
+        }
     }
+
 }
     public class TransportInput
     {

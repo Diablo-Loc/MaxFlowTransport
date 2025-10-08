@@ -32,6 +32,8 @@ namespace src.UI
         private Node sinkNode = null;
         private List<Node> sourceNodes = new List<Node>();
         private List<Node> sinkNodes = new List<Node>();
+        private System.Windows.Forms.Timer animationTimer;
+        private float flowPhase = 0f; // dùng để dịch chuyển hiệu ứng
 
         public GraphVisualizer()
         {
@@ -41,6 +43,10 @@ namespace src.UI
             pnlDraw.MouseDown += PanelDraw_MouseDown;
             pnlDraw.MouseMove += PanelDraw_MouseMove;
             pnlDraw.MouseUp += PanelDraw_MouseUp;
+            animationTimer = new System.Windows.Forms.Timer();
+            animationTimer.Interval = 30; // ~30ms cho mượt
+            animationTimer.Tick += AnimationTimer_Tick;
+            animationTimer.Start();
 
             btnAddNode.Click += (s, e) => { mode = "AddNode"; btnAddNode.BackColor = Color.LightGreen; };
             btnAddEdge.Click += (s, e) => { mode = "AddEdge"; btnAddNode.BackColor = SystemColors.Control; };
@@ -57,6 +63,12 @@ namespace src.UI
                     dragOffset = new Point((int)(e.X - hit.X), (int)(e.Y - hit.Y));
                 }
             }
+        }
+        private void AnimationTimer_Tick(object sender, EventArgs e)
+        {
+            flowPhase += 0.02f;
+            if (flowPhase > 1f) flowPhase -= 1f;
+            pnlDraw.Invalidate(); // vẽ lại
         }
         private void PanelDraw_MouseMove(object sender, MouseEventArgs e)
         {
@@ -314,6 +326,22 @@ namespace src.UI
                 {
                     pen.CustomEndCap = new AdjustableArrowCap(5, 7, true);
                     g.DrawLine(pen, start, end);
+                    if (edgeData != null && edgeData.Flow > 0)
+                    {
+                        int particleCount = Math.Min(5, edgeData.Flow / 5); // số hạt theo flow
+                        for (int i = 0; i < particleCount; i++)
+                        {
+                            float phaseOffset = (flowPhase + i * 0.2f) % 1f;
+                            float px = start.X + (end.X - start.X) * phaseOffset;
+                            float py = start.Y + (end.Y - start.Y) * phaseOffset;
+
+                            float radius = 4f;
+                            using (var brush1 = new SolidBrush(Color.Orange))
+                            {
+                                g.FillEllipse(brush1, px - radius, py - radius, radius * 2, radius * 2);
+                            }
+                        }
+                    }
                 }
 
 
