@@ -1,4 +1,5 @@
 ﻿using src.Algorithms;
+using src.Helpers;
 using src.Models;
 using System;
 using System.Collections.Generic;
@@ -656,7 +657,22 @@ namespace src.UI
             }
             return false;
         }
+        public void ApplyLanguage()
+        {
+            btnAddNode.Text = LanguageManager.Get("BtnAddNode");
+            btnAddEdge.Text = LanguageManager.Get("BtnAddEdge");
+            btnClear.Text = LanguageManager.Get("BtnClear");
+            btnRun.Text = LanguageManager.Get("BtnRun");
+            label1.Text = LanguageManager.Get("LabelMaxFlow");
+            btnEraseNode.Text = LanguageManager.Get("BtnEraseNode");
+            btnEditEdge.Text = LanguageManager.Get("BtnEditEdge");
+            btnEraseEdge.Text = LanguageManager.Get("BtnEraseEdge");
+            btnSelect.Text = LanguageManager.Get("BtnSelect");
+            btnSelectSource.Text = LanguageManager.Get("BtnSelectSource");
+            btnSelectSink.Text = LanguageManager.Get("BtnSelectSink");
 
-        
+        }
+
+
     }
 }

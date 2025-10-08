@@ -1,4 +1,5 @@
-Supply: 10
-Demand: 10
+Supply: 40,30
+Demand: 20,30,20
 Matrix:
-10
+22 24 10
+24 28 12

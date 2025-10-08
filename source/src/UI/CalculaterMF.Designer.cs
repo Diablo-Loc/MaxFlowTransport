@@ -80,6 +80,7 @@ namespace src.UI
             // btnCreat
             // 
             btnCreat.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            btnCreat.AutoSize = true;
             btnCreat.BackColor = Color.MediumSeaGreen;
             btnCreat.FlatAppearance.BorderColor = Color.White;
             btnCreat.FlatAppearance.MouseDownBackColor = Color.FromArgb(192, 255, 192);
@@ -96,14 +97,14 @@ namespace src.UI
             // 
             // lblInput
             // 
-            lblInput.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            lblInput.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblInput.BackColor = Color.Transparent;
             lblInput.FlatStyle = FlatStyle.Flat;
             lblInput.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblInput.ForeColor = Color.Black;
-            lblInput.Location = new Point(12, 0);
+            lblInput.Location = new Point(0, 0);
             lblInput.Name = "lblInput";
-            lblInput.Size = new Size(957, 55);
+            lblInput.Size = new Size(993, 54);
             lblInput.TabIndex = 6;
             lblInput.Text = "INPUT";
             lblInput.TextAlign = ContentAlignment.MiddleCenter;
@@ -111,6 +112,7 @@ namespace src.UI
             // btnClear
             // 
             btnClear.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            btnClear.AutoSize = true;
             btnClear.BackColor = Color.MediumSeaGreen;
             btnClear.FlatAppearance.BorderColor = Color.White;
             btnClear.FlatAppearance.MouseDownBackColor = Color.FromArgb(192, 255, 192);
@@ -128,6 +130,7 @@ namespace src.UI
             // btnRun
             // 
             btnRun.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            btnRun.AutoSize = true;
             btnRun.BackColor = Color.MediumSeaGreen;
             btnRun.FlatAppearance.BorderColor = Color.White;
             btnRun.FlatAppearance.MouseDownBackColor = Color.FromArgb(192, 255, 192);
@@ -260,7 +263,7 @@ namespace src.UI
             // 
             // pnlDraw
             // 
-            pnlDraw = new DoubleBufferedPanel();
+            pnlDraw =new DoubleBufferedPanel();
             pnlDraw.Controls.Add(pnlTicker);
             pnlDraw.Controls.Add(btnzomout);
             pnlDraw.Controls.Add(bntzomin);
@@ -364,6 +367,7 @@ namespace src.UI
             // btnToggleInput
             // 
             btnToggleInput.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnToggleInput.AutoSize = true;
             btnToggleInput.Location = new Point(896, 0);
             btnToggleInput.Name = "btnToggleInput";
             btnToggleInput.Size = new Size(94, 31);

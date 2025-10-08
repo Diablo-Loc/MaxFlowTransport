@@ -9,6 +9,11 @@
       "src/1.0.0": {
         "runtime": {
           "src.dll": {}
+        },
+        "resources": {
+          "vi/src.resources.dll": {
+            "locale": "vi"
+          }
         }
       }
     }

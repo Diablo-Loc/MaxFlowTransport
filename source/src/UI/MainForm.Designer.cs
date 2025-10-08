@@ -34,6 +34,8 @@
             btnMaximize = new Button();
             btnExit = new Button();
             pnlMenu = new Panel();
+            cmbLanguage = new ComboBox();
+            lblLanguage = new Label();
             btnSimlator = new Button();
             btnCalculateMaxFlow = new Button();
             btnHome = new Button();
@@ -42,6 +44,7 @@
             label2 = new Label();
             label1 = new Label();
             panel2 = new Panel();
+            pnlUserManual = new Panel();
             lblmain = new Label();
             pnlHienThi = new Panel();
             pictureBox1 = new PictureBox();
@@ -121,6 +124,8 @@
             // pnlMenu
             // 
             pnlMenu.BackColor = Color.DimGray;
+            pnlMenu.Controls.Add(cmbLanguage);
+            pnlMenu.Controls.Add(lblLanguage);
             pnlMenu.Controls.Add(btnSimlator);
             pnlMenu.Controls.Add(btnCalculateMaxFlow);
             pnlMenu.Controls.Add(btnHome);
@@ -130,6 +135,29 @@
             pnlMenu.Name = "pnlMenu";
             pnlMenu.Size = new Size(200, 759);
             pnlMenu.TabIndex = 1;
+            // 
+            // cmbLanguage
+            // 
+            cmbLanguage.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            cmbLanguage.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbLanguage.FormattingEnabled = true;
+            cmbLanguage.Items.AddRange(new object[] { "English", "Tiếng Việt" });
+            cmbLanguage.Location = new Point(28, 634);
+            cmbLanguage.Name = "cmbLanguage";
+            cmbLanguage.Size = new Size(151, 28);
+            cmbLanguage.TabIndex = 5;
+            cmbLanguage.SelectedIndexChanged += cmbLanguage_SelectedIndexChanged;
+            // 
+            // lblLanguage
+            // 
+            lblLanguage.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            lblLanguage.AutoSize = true;
+            lblLanguage.ForeColor = Color.White;
+            lblLanguage.Location = new Point(28, 611);
+            lblLanguage.Name = "lblLanguage";
+            lblLanguage.Size = new Size(74, 20);
+            lblLanguage.TabIndex = 4;
+            lblLanguage.Text = "Language";
             // 
             // btnSimlator
             // 
@@ -218,12 +246,25 @@
             // panel2
             // 
             panel2.BackColor = Color.Gray;
+            panel2.Controls.Add(pnlUserManual);
             panel2.Controls.Add(lblmain);
             panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(200, 33);
             panel2.Name = "panel2";
             panel2.Size = new Size(997, 88);
             panel2.TabIndex = 2;
+            // 
+            // pnlUserManual
+            // 
+            pnlUserManual.Anchor = AnchorStyles.Right;
+            pnlUserManual.BackgroundImage = (Image)resources.GetObject("pnlUserManual.BackgroundImage");
+            pnlUserManual.BackgroundImageLayout = ImageLayout.Stretch;
+            pnlUserManual.BorderStyle = BorderStyle.FixedSingle;
+            pnlUserManual.Location = new Point(941, 43);
+            pnlUserManual.Name = "pnlUserManual";
+            pnlUserManual.Size = new Size(53, 42);
+            pnlUserManual.TabIndex = 1;
+            pnlUserManual.MouseEnter += pnlUserManual_MouseEnter;
             // 
             // lblmain
             // 
@@ -273,6 +314,7 @@
             Text = "MainForm";
             pnltopbar.ResumeLayout(false);
             pnlMenu.ResumeLayout(false);
+            pnlMenu.PerformLayout();
             pnlNameGroup.ResumeLayout(false);
             pnlNameGroup.PerformLayout();
             panel2.ResumeLayout(false);
@@ -299,5 +341,8 @@
         private Button btnMinimize;
         private Button btnMaximize;
         private Button btnSimlator;
+        private ComboBox cmbLanguage;
+        private Label lblLanguage;
+        private Panel pnlUserManual;
     }
 }

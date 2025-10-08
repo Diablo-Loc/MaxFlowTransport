@@ -22,3 +22,7 @@ D:\Học tập\7.Hoc_tren_lop\Toan_roi_rac\MaxFlowTransport\source\src\obj\Debug
 D:\Học tập\7.Hoc_tren_lop\Toan_roi_rac\MaxFlowTransport\source\src\obj\Debug\net8.0-windows\ref\src.dll
 D:\Học tập\7.Hoc_tren_lop\Toan_roi_rac\MaxFlowTransport\source\src\obj\Debug\net8.0-windows\src.UI.Home.resources
 D:\Học tập\7.Hoc_tren_lop\Toan_roi_rac\MaxFlowTransport\source\src\obj\Debug\net8.0-windows\src.UI.CalculaterMF.resources
+D:\Học tập\7.Hoc_tren_lop\Toan_roi_rac\MaxFlowTransport\source\src\obj\Debug\net8.0-windows\src.Localization.Strings.resources
+D:\Học tập\7.Hoc_tren_lop\Toan_roi_rac\MaxFlowTransport\source\src\bin\Debug\net8.0-windows\vi\src.resources.dll
+D:\Học tập\7.Hoc_tren_lop\Toan_roi_rac\MaxFlowTransport\source\src\obj\Debug\net8.0-windows\src.Localization.Strings.vi.resources
+D:\Học tập\7.Hoc_tren_lop\Toan_roi_rac\MaxFlowTransport\source\src\obj\Debug\net8.0-windows\vi\src.resources.dll

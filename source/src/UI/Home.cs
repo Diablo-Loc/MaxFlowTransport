@@ -1,4 +1,5 @@
-﻿using System;
+﻿using src.Helpers;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,6 +17,7 @@ namespace src.UI
         {
             InitializeComponent();
             this.DoubleBuffered = true;
+            ApplyLanguage();
         }
         public class DoubleBufferedPanel : Panel
         {
@@ -27,6 +29,11 @@ namespace src.UI
                               ControlStyles.OptimizedDoubleBuffer, true);
                 this.UpdateStyles();
             }
+        }
+        public void ApplyLanguage()
+        {
+            label1.Text = LanguageManager.Get("titleAboutUs");
+            label2.Text = LanguageManager.Get("TextAbout");
         }
     }
 }

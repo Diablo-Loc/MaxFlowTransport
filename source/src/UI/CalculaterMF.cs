@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualBasic.Devices;
 using src.Algorithms;
+using src.Helpers;
 using src.Models;
 using src.UI.Controls;
 using System;
@@ -42,6 +43,7 @@ namespace src.UI
         private Point dragOffset;
         private string mode = "Select";
         private Edge selectedEdge = null;
+        MainForm mainForm => this.ParentForm as MainForm;
         public CalculaterMF()
         {
             InitializeComponent();
@@ -849,7 +851,7 @@ namespace src.UI
             if (isInputVisible)
             {
                 chkEnableBalancing.Visible = true;
-                btnToggleInput.Text = "Hide Input";
+                btnToggleInput.Text = LanguageManager.Get("BtnHideInput");
                 pnlDraw.Height = this.ClientSize.Height - pnlInput.Height - 20;
                 pnlDraw.Top = 10;
             }
@@ -887,7 +889,7 @@ namespace src.UI
                     return;
                 }
 
-                btnToggleInput.Text = "Show Input";
+                btnToggleInput.Text = LanguageManager.Get("BtnShowInput");
                 pnlDraw.Height = this.ClientSize.Height - 20;
                 pnlDraw.Top = 10;
             }
@@ -1042,6 +1044,29 @@ namespace src.UI
             // Hiệu ứng hover
             btn.MouseEnter += (s, e) => btn.BackColor = Color.SeaGreen;
             btn.MouseLeave += (s, e) => btn.BackColor = ColorTranslator.FromHtml("#43a047");
+        }
+        public void ApplyLanguage()
+        {
+            btnCreat.Text = LanguageManager.Get("BtnCreat");
+            lblInput.Text = LanguageManager.Get("LabelInput");
+            btnClear.Text = LanguageManager.Get("BtnClear");
+            btnRun.Text = LanguageManager.Get("BtnRun");
+            lblDemand.Text = LanguageManager.Get("LabelDemand");
+            lblSupply.Text = LanguageManager.Get("LabelSupply");
+            lblMaxFlow.Text = LanguageManager.Get("TitleMaxFlow");
+            lblMauSupply.Text = LanguageManager.Get("TitleExample1");
+            lblMauDemand.Text = LanguageManager.Get("TitleExample2");
+            lblExCapa.Text = LanguageManager.Get("TitleExample3");
+            lblChooseTestCase.Text = LanguageManager.Get("LabelChooseTest");
+            lblTicker.Text = LanguageManager.Get("MsgMoveNode");
+            chkEnableBalancing.Text = LanguageManager.Get("OptionAutoBanlance");
+            chkEnableAnimation.Text = LanguageManager.Get("OptionEnableAimation");
+            chkColorByFlow.Text = LanguageManager.Get("OptionColorByFlow");
+            btnToggleInput.Text = LanguageManager.Get("BtnHideInput");
+
+            /*btnCreate.Text = LanguageManager.Get("BtnCreate");
+            lblInput.Text = LanguageManager.Get("LabelInput");
+            chkEnableAnimation.Text = LanguageManager.Get("OptionEnableAnimation");*/
         }
     }
 
